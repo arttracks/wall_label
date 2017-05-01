@@ -1,0 +1,35 @@
+@mixin clearfix
+  &::after 
+    display: block
+    content: ""
+    clear: both
+
+.Dashboard
+  background-color: #F2F2F2
+  padding-bottom: 0.5rem 
+  @include clearfix
+
+  .current_date
+    text-align: center
+    font-size: 2rem
+
+  dl
+    margin-top: 1rem
+    @include clearfix
+
+  dt
+    float: left
+    width: 35%
+    text-align: right
+    font-weight: bold
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif
+    height: 1.25rem
+
+  dd
+    float: right
+    width: 60%
+    margin: 0
+    height: 1.25rem
+
+
+
