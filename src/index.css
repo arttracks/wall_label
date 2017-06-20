@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Proforma";
-  src: url("./proforma-book-webfont.ttf"); }
+  src: url("./assets/proforma-book-webfont.ttf"); }
 
 html {
   font-size: 20px;
@@ -22,3 +22,13 @@ body {
 
 #root {
   height: 100%; }
+
+p {
+  line-height: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+h2 {
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: .25rem; }

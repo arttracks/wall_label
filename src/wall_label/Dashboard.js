@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import './Dashboard.css';
-import fake_timeline from "./fake_timeline.svg";
+import fake_timeline from "../assets/fake_timeline.svg";
 
 class Dashboard extends Component {
 
   constructor(props) {
       super(props);
-      this.state = {currentYear: this.props.objectData.startYear-1}      
+      this.state = {currentYear: this.props.objectData.startYear-1}
   }
 
   componentDidMount() {
     this.countUp()
   }
-  
+
   componentWillUnmount() {
     clearTimeout(this.state.timeoutId);
   }
@@ -32,7 +32,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="Dashboard">
-        <div className='current_date'>- {this.state.currentYear} -</div>  
+        <div className='current_date'>- {this.state.currentYear} -</div>
         <dl>
           <dt>Location:</dt><dd>Stratton Park, Hampshire, England</dd>
           <dt>Owner:</dt><dd>Thomas George Baring</dd>
