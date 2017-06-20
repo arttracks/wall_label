@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Proforma";
+  src: url("./proforma-book-webfont.ttf"); }
+
+html {
+  font-size: 20px;
+  background-color: #410c0c;
+  box-shadow: 0 0 120px 20px #000 inset;
+  height: 100%;
+  perspective: 2000px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Proforma;
+  height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+#root {
+  height: 100%; }

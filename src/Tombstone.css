@@ -1,0 +1,19 @@
+.tombstone {
+  padding-bottom: 1rem; }
+  .tombstone .artist, .tombstone .title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; }
+  .tombstone .nationality, .tombstone .life_dates, .tombstone .medium, .tombstone .credit_line {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1 rem; }
+  .tombstone .title {
+    font-style: italic; }
+  .tombstone .nationality {
+    margin-bottom: 1rem; }
+  .tombstone .medium {
+    margin-bottom: 0.5rem; }
+  .tombstone .credit_line {
+    font-size: 0.75rem;
+    font-variant: small-caps; }

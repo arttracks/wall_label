@@ -1,0 +1,24 @@
+.button {
+  margin: 5% 10%;
+  background-color: #EDB9B9;
+  text-align: center;
+  border: #d9d9d9;
+  display: inline-block;
+  width: 80%; }
+
+.half {
+  width: 30%; }
+  .half .button_text {
+    padding: .5rem 1rem; }
+  .half .call_to_action {
+    padding: 0rem 1rem .5rem; }
+
+.button_text {
+  padding: 1rem 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; }
+
+.call_to_action {
+  padding: 0rem 1rem 1rem;
+  font-style: italic; }
