@@ -1,7 +1,118 @@
 [
   {
     "startYear": 1616,
-    "momentYear": 1927,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring, Lord Northbrook",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring, 2nd Earl of Northbrook",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "1616",
+        "tagline": "What's up with the fish?",
+        "story": "Frans Hals’s portraiture is distinguished by dazzling brushwork and penetrating analysis of character. Hals received numerous commissions for both individual and group portraits, even though his style of visible brushstrokes differed from prevailing norms in Dutch painting at the time. In the 19th century, with the advent of the Impressionist movement, Hals’s mastery was recognized anew.\nHals’s style is well-suited for a portrait of Pieter Cornelisz. van der Morsch, a court officer of Leiden and a member of the Chamber of Rhetoric, the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit."
+      },
+      {
+        "year": 1927,
+        "yearText": "1927",
+        "tagline": "Can you see the crack?",
+        "story": "In the 17th century, Dutch artists often painted on wooden panels even though painting on canvas had become popular elsewhere nearly a century earlier. When the British art dealer Sir Joseph Duveen purchased this Hals portrait from Lord Northbrook in 1927 it was still on its original panel support. By the time he sold it to the American advertising pioneer Alfred W. Erickson in 1929, it had been transferred to canvas. Such transfer, usually to stabilize a painting, is a painstaking process. It involves gradually shaving off the damaged, cracked, or infested panel and attaching the resulting thin paint layer to a specially prepared canvas. The process was used extensively in the 19th century, but it has since been largely supplanted by less severe methods of conservation."
+      },
+      {
+        "year": 1996,
+        "yearText": "ca. 1996",
+        "tagline": "Can you read latin?",
+        "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis, mauris quis vulputate consequat, velit nunc vestibulum nunc, at euismod lacus nisl at urna. Phasellus porttitor arcu vestibulum tortor molestie bibendum. Nullam ut orci a mauris vestibulum dignissim sed in ligula. Vivamus non felis varius, efficitur ipsum et, scelerisque velit. Nunc sed imperdiet tellus. Pellentesque sit amet molestie turpis, sit amet rutrum nisi. In scelerisque justo sed elit faucibus, non consectetur velit venenatis. Sed feugiat diam nec ligula condimentum, quis elementum sem fringilla. Pellentesque pulvinar magna vitae lacinia lobortis.\nNullam quis augue id dui ullamcorper tristique. Donec consequat ex ex, sed vehicula felis accumsan in. Nunc aliquet fringilla enim sed rhoncus. Cras sed accumsan diam. Fusce porttitor tincidunt accumsan. Pellentesque id nibh id purus commodo pellentesque in interdum lacus."
+      }
+    ],
     "artist": "Frans Hals",
     "nationality": "Dutch",
     "life_dates": "1581-1585–08/29/1666",
@@ -9,9 +120,7 @@
     "creation_date": "1616",
     "medium": "oil on canvas, transferred from panel",
     "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
-    "accession_number": "61.42.2",
-    "story": "In the 17th century, Dutch artists often painted on wooden panels even though painting on canvas had become popular elsewhere nearly a century earlier. When the British art dealer Sir Joseph Duveen purchased this Hals portrait from Lord Northbrook in 1927 it was still on its original panel support. By the time he sold it to the American advertising pioneer Alfred W. Erickson in 1929, it had been transferred to canvas. Such transfer, usually to stabilize a painting, is a painstaking process. It involves gradually shaving off the damaged, cracked, or infested panel and attaching the resulting thin paint layer to a specially prepared canvas. The process was used extensively in the 19th century, but it has since been largely supplanted by less severe methods of conservation.",
-    "chat": "Frans Hals’s portraiture is distinguished by dazzling brushwork and penetrating analysis of character. Hals received numerous commissions for both individual and group portraits, even though his style of visible brushstrokes differed from prevailing norms in Dutch painting at the time. In the 19th century, with the advent of the Impressionist movement, Hals’s mastery was recognized anew.\nHals’s style is well-suited for a portrait of Pieter Cornelisz. van der Morsch, a court officer of Leiden and a member of the Chamber of Rhetoric, the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit."
+    "accession_number": "61.42.2"
   },
   {
     "startYear": 1520,

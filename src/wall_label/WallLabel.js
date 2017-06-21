@@ -6,6 +6,7 @@ import $ from 'jquery';
 import Tombstone from "./Tombstone.js"
 import Dashboard from "./Dashboard.js"
 import Button from "../shared_components/Button.js"
+import ContentBlock from "./ContentBlock.js"
 
 // Assets
 import './WallLabel.css';
@@ -16,7 +17,17 @@ class WallLabel extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {flipped: false, currentRun: Date.now()};
+
+    let currentObject = this.props.match.params.id || 1;
+    currentObject -= 1;
+
+    this.state = {
+      flipped: false,
+      currentRun: Date.now(),
+      frontMoment: 0,
+      backMoment: objectData[currentObject].moments.length-1,
+      work: objectData[currentObject]
+    };
   }
 
   resetDashboard() {
@@ -25,47 +36,48 @@ class WallLabel extends Component {
 
   spin(e) {
     if(this.state.flipped){
+      let nextFront = this.state.frontMoment+2;
+      if (nextFront >= this.state.work.moments.length) {
+        nextFront -= this.state.work.moments.length;
+      }
+      this.setState({frontMoment: nextFront});
+
       $('.WallLabel').css("transform", "rotateY(0deg)")
+      this.resetDashboard();
+
     }
     else {
+      let nextBack = this.state.backMoment+2;
+      if (nextBack >= this.state.work.moments.length) {
+        nextBack -= this.state.work.moments.length;
+      }
+      this.setState({backMoment: nextBack});
+
       $('.WallLabel').css("transform", "rotateY(180deg)")
       this.resetDashboard();
+
     }
     this.setState({flipped: !this.state.flipped});
   }
 
   render() {
 
-    let spin = this.spin.bind(this);
-    let resetDashboard = this.resetDashboard.bind(this);
-    let currentObject = this.props.match.params.id || 1;
-    currentObject -= 1;
-
-    let formattedChat = objectData[currentObject].chat.replace("\n","</p></p>")
-    let formattedStory = objectData[currentObject].story.replace("\n","</p></p>")
     return (
       <div className="WallLabel">
-        <section className="front">
-          <div className="content">
-            <Tombstone data={objectData[currentObject]}/>
-            <p dangerouslySetInnerHTML={{__html: formattedChat}}></p>
-          </div>
-          <footer>
-            <Button text='Where has this painting been?' cta='Touch here to find out!' action={spin}/>
-          </footer>
-        </section>
-        <section className="back">
-          <div className="content">
-            <Tombstone data={objectData[currentObject]} />
-            <Dashboard objectData={objectData[currentObject]} key={this.state.currentRun} />
-            <h2>★ A Moment in History:  {objectData[currentObject].momentYear}</h2>
-            <p dangerouslySetInnerHTML={{__html: formattedStory}}></p>
-          </div>
-          <footer>
-            <Button text='Replay' cta='Touch Here.' size="half" action={resetDashboard}/>
-            <Button text='Go Back' cta='Touch Here.' size="half" action={spin}/>
-          </footer>
-        </section>
+        <ContentBlock
+          action={this.spin.bind(this)}
+          currentMoment={this.state.frontMoment}
+          work={this.state.work}
+          resetKey={this.state.currentRun}
+          side="front"
+        />
+         <ContentBlock
+          action={this.spin.bind(this)}
+          currentMoment={this.state.backMoment}
+          work={this.state.work}
+          resetKey={this.state.currentRun}
+          side="back"
+        />
       </div>
     );
   }

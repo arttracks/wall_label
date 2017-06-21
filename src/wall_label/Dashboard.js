@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Dashboard.css';
 import fake_timeline from "../assets/fake_timeline.svg";
+import Timeline from "../shared_components/Timeline.js"
+import EventLog from "./EventLog.js"
 
 class Dashboard extends Component {
 
@@ -31,15 +33,20 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className="Dashboard">
+      <div className="Dashboard" id="dashboard">
         <div className='current_date'>- {this.state.currentYear} -</div>
-        <dl>
-          <dt>Location:</dt><dd>Stratton Park, Hampshire, England</dd>
-          <dt>Owner:</dt><dd>Thomas George Baring</dd>
-          <dt>Total Owners:</dt><dd>12</dd>
-          <dt>Miles Travelled:</dt><dd>62,123</dd>
-        </dl>
-        <div id="AnimatedTimeline"><img src={fake_timeline} alt="" /></div>
+        <EventLog
+          currentYear={this.state.currentYear}
+          eventList = {this.props.objectData.events}
+        />
+        <Timeline
+          parentId="dashboard"
+          startYear={this.props.objectData.startYear}
+          eventList = {this.props.objectData.events}
+          currentYear={this.state.currentYear}
+          moments={this.props.objectData.moments}
+          currentMoment={this.props.moment}
+        ></Timeline>
       </div>
     )
   }
