@@ -1,6 +1,9 @@
 .TOC {
-  background: white; }
+  background: white;
+  height: 80%; }
 
-.TOC a {
-  display: block;
-  margin-bottom: 1rem; }
+.credits {
+  margin: 40px 0;
+  border-top: 1px solid black;
+  padding: 20px 80px;
+  font-size: 75%; }
