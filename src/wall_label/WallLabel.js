@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 // Internal Components
-import Tombstone from "./Tombstone.js"
-import Dashboard from "./Dashboard.js"
-import Button from "../shared_components/Button.js"
 import ContentBlock from "./ContentBlock.js"
 
 // Assets

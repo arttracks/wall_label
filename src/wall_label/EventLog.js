@@ -11,7 +11,7 @@ export default function(props) {
     event = props.eventList[i]
     distance += event.distance
     i+=1;
-    if (i == props.eventList.length) { break;}
+    if (i === props.eventList.length) { break;}
   }
 
   return (

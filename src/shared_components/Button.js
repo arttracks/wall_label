@@ -1,9 +1,18 @@
+// External Components
+//------------------------
 import React from 'react';
+
+// Internal Components
+//------------------------
+
+// Assets
+//------------------------
 import './Button.css';
 
+//------------------------------------------------------------------------------
 export default function(props) {
 
-  let button_class = props.size === "half" ? "button half" : "button";
+  let button_class = `button ${props.size}`;
 
   let actionFunction = function(){props.action(); return false;}
 

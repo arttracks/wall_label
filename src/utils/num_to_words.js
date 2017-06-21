@@ -1,4 +1,5 @@
 // from https://stackoverflow.com/questions/14766951/convert-digits-into-words-with-javascript
+/* eslint-disable */
 
 // numToWords :: (Number a, String a) => a -> String
 const numToWords = function(n)  {

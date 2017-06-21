@@ -1,34 +1,35 @@
+// External Components
+//------------------------
 import React, { Component } from 'react';
-import './Dashboard.css';
-import fake_timeline from "../assets/fake_timeline.svg";
+
+// Internal Components
+//------------------------
 import Timeline from "../shared_components/Timeline.js"
 import EventLog from "./EventLog.js"
+import YearCounter from "../utils/year_counter.js"
 
+// Assets
+//------------------------
+import './Dashboard.css';
+
+//------------------------------------------------------------------------------
 class Dashboard extends Component {
 
   constructor(props) {
       super(props);
-      this.state = {currentYear: this.props.objectData.startYear-1}
+      this.state = {};
+
+      const startYear = this.props.objectData.startYear;
+      const yearCallback = year => {this.setState({currentYear: year})};
+      this.counter = new YearCounter(startYear,yearCallback);
   }
 
   componentDidMount() {
-    this.countUp()
+    this.counter.onStart();
   }
 
   componentWillUnmount() {
-    clearTimeout(this.state.timeoutId);
-  }
-
-  countUp() {
-    let timeoutId = setTimeout(this.incrementYear.bind(this), 100)
-    this.setState({timeoutId: timeoutId})
-  }
-
-  incrementYear() {
-     this.setState({currentYear: this.state.currentYear + 1});
-     if (this.state.currentYear < new Date().getFullYear()) {
-      this.countUp()
-    }
+    this.counter.onExit();
   }
 
   render() {
@@ -37,18 +38,18 @@ class Dashboard extends Component {
         <div className='current_date'>- {this.state.currentYear} -</div>
         <EventLog
           currentYear={this.state.currentYear}
-          eventList = {this.props.objectData.events}
+          eventList={this.props.objectData.events}
         />
         <Timeline
           parentId="dashboard"
           startYear={this.props.objectData.startYear}
-          eventList = {this.props.objectData.events}
+          eventList={this.props.objectData.events}
           currentYear={this.state.currentYear}
           moments={this.props.objectData.moments}
           currentMoment={this.props.moment}
         ></Timeline>
       </div>
-    )
+    );
   }
 }
 
