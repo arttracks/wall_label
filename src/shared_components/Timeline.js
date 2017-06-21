@@ -59,7 +59,7 @@ class Timeline extends Component {
         else { chosenScale = endScale }
         return chosenScale(input)
 
-      } 
+      }
     }
     else {
       x = scaleLinear()
@@ -69,7 +69,7 @@ class Timeline extends Component {
 
     // build the ratio box
     let expansionLabel = null;
-    if (this.props.expansion.label) {
+    if (this.props.expansion && this.props.expansion.label) {
       const exp = this.props.expansion;
 
       const width = x(exp.end)-x(exp.start)
