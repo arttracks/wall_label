@@ -10,7 +10,7 @@
     { "year": 1889, "title": "Publishing the Catalog"},
     { "year": 1910, "title": "How Much is it Worth?"},
     { "year": 1928, "title": "Collection for Sale"}
-  ],
+  ],    
   "context": [
     {"year": 1492, "label": "Columbus Discovers America"},
     {"year": 1503, "label": "Mona Lisa Painted"},

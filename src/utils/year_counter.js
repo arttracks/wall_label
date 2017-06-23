@@ -1,7 +1,8 @@
 class YearCounter {
 
-  constructor(startYear, updateCallback) {
+  constructor(startYear, speed, updateCallback) {
     this.startYear = startYear;
+    this.speed = speed;
     this.currentYear = startYear-1;
     this.timeoutId = null;
     this.endYear = new Date().getFullYear();
@@ -26,7 +27,7 @@ class YearCounter {
   // Private methods
   //----------------------------------------------------------------------------
   _countUp() {
-    this.timeoutId = setTimeout(this._incrementYear.bind(this), 100)
+    this.timeoutId = setTimeout(this._incrementYear.bind(this), this.speed*1000)
   }
 
   _incrementYear() {

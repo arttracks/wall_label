@@ -21,7 +21,7 @@ class Dashboard extends Component {
 
       const startYear = this.props.objectData.startYear;
       const yearCallback = year => {this.setState({currentYear: year})};
-      this.counter = new YearCounter(startYear,yearCallback);
+      this.counter = new YearCounter(startYear,0.1,yearCallback);
   }
 
   componentDidMount() {

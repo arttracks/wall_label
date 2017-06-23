@@ -29,11 +29,11 @@ export default function(props) {
       let percent = ((earliest-date.year)/Math.abs(props.offset))*-1
       let opacity = dateIsAfter ? 1-percent : percent;
       if (opacity > 0.90) {
-        opacity = opacity-(opacity-.9)*10
+        opacity -= (opacity-.9)*10
       }
 
       dates.push(
-        <text 
+        <text
           y={`${percent*100}%`}
           opacity={opacity}
         >

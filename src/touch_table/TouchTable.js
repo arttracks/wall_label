@@ -24,7 +24,7 @@ class TouchTable extends Component {
       this.state = {currentMoment: null};
 
       const yearCallback = year => {this.setState({currentYear: year})};
-      this.counter = new YearCounter(data.startYear,yearCallback);
+      this.counter = new YearCounter(data.startYear,.2,yearCallback);
   }
 
   componentDidMount() {
@@ -36,6 +36,22 @@ class TouchTable extends Component {
   }
 
   render() {
+
+    // let currentMoment = 0;
+    // let found = false;
+    // while (!found) {
+    //   if (data.moment[currentMoment +1]) {
+    //     let d1 = data.moment[currentMoment]
+    //     let d2 = data.moment[currentMoment+1]
+    //     let y = this.state.currentYear
+    //     if (Math.abs(d2-y) > Math.abs(d1-y)) {
+    //       found = true
+    //     } else {
+    //       currentMoment += 1;
+    //     }
+    //   } else {found = true}
+    // }
+
     return (
       <div className="TouchTable" id="table">
 
@@ -61,7 +77,7 @@ class TouchTable extends Component {
             showLabel
             expansion={ {start: 1750, end: 1930, ratio:1.8, label: "The Northbrook Era" } }/>
 
-            <Button 
+            <Button
               text="Restart"
               cta="Touch Here."
               size="half"
@@ -73,12 +89,13 @@ class TouchTable extends Component {
         </div>
 
         <div className="overlay">
-          <img 
+          <img
             src={overlay}
+            alt=""
             onClick={()=> $(".overlay").hide()}
           />
         </div>
-        
+
       </div>
     );
   }
