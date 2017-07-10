@@ -11,6 +11,7 @@ export default function(props) {
     <section className={props.side}>
 
     <div className="content">
+      {props.side}
       <Dashboard
         objectData={props.work}
         key={props.resetKey}
@@ -19,9 +20,9 @@ export default function(props) {
       <p dangerouslySetInnerHTML={{__html: moment.story.replace("\n","</p></p>")}}></p>
     </div>
     <footer>
-      <Button 
-        text={props.work.moments[nextMoment].tagline} 
-        cta='Touch here to find out!' 
+      <Button
+        text={props.work.moments[nextMoment].tagline}
+        cta='Touch here to find out!'
         action={props.action}
       />
     </footer>

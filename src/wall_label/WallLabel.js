@@ -38,20 +38,19 @@ class WallLabel extends Component {
       nextBack -= this.state.work.moments.length;
     }
 
+    el.addClass('notransition');
+
+    el.css("transform", "rotateY(-180deg)")
+    this.setState({backMoment: this.state.frontMoment});
+    // el[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+    el.removeClass('notransition');
+
     this.resetDashboard();
-    this.setState({backMoment: nextBack});
+    this.setState({frontMoment: nextBack});
 
-    el.css("transform", "rotateY(180deg)")
+    el.css("transform", "rotateY(0deg)")
 
-    el.on('transitionend', () => {
-      el.addClass('notransition');
-
-      el.css("transform", "rotateY(0deg)")
-      this.setState({frontMoment: this.state.backMoment});
-      // el[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
-      el.removeClass('notransition');
-    }
-    )
+    // el.on('transitionend', () => {})
 
   }
 
@@ -71,6 +70,7 @@ class WallLabel extends Component {
           currentMoment={this.state.backMoment}
           work={this.state.work}
           resetKey={this.state.currentRun}
+          back
           side="back"
         />
       </div>
