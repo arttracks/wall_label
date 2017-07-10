@@ -32,29 +32,27 @@ class WallLabel extends Component {
   }
 
   spin(e) {
-    if(this.state.flipped){
-      let nextFront = this.state.frontMoment+2;
-      if (nextFront >= this.state.work.moments.length) {
-        nextFront -= this.state.work.moments.length;
-      }
-      this.setState({frontMoment: nextFront});
-
-      $('.WallLabel').css("transform", "rotateY(0deg)")
-      this.resetDashboard();
-
+    let el = $('.WallLabel')
+    let nextBack = this.state.frontMoment+1;
+    if (nextBack >= this.state.work.moments.length) {
+      nextBack -= this.state.work.moments.length;
     }
-    else {
-      let nextBack = this.state.backMoment+2;
-      if (nextBack >= this.state.work.moments.length) {
-        nextBack -= this.state.work.moments.length;
-      }
-      this.setState({backMoment: nextBack});
 
-      $('.WallLabel').css("transform", "rotateY(180deg)")
-      this.resetDashboard();
+    this.resetDashboard();
+    this.setState({backMoment: nextBack});
 
+    el.css("transform", "rotateY(180deg)")
+
+    el.on('transitionend', () => {
+      el.addClass('notransition');
+
+      el.css("transform", "rotateY(0deg)")
+      this.setState({frontMoment: this.state.backMoment});
+      // el[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+      el.removeClass('notransition');
     }
-    this.setState({flipped: !this.state.flipped});
+    )
+
   }
 
   render() {
