@@ -1,0 +1,73 @@
+{
+  "id": 404413457,
+  "type": "Feature",
+  "properties": {
+    "edtf:cessation":"uuuu",
+    "edtf:inception":"uuuu",
+    "geom:area":0.002783,
+    "geom:area_square_m":23819754.638671,
+    "geom:bbox":"5.20699694989,46.1759415816,5.28723878924,46.2282695999",
+    "geom:latitude":46.205155,
+    "geom:longitude":5.246022,
+    "iso:country":"FR",
+    "lbl:latitude":46.204099,
+    "lbl:longitude":5.245258,
+    "mz:hierarchy_label":1,
+    "qs:a0":"France",
+    "qs:a1":"AIN",
+    "qs:a1_lc":"01",
+    "qs:a1r":"RHONE-ALPES",
+    "qs:a1r_lc":"82",
+    "qs:a2_lc":"99",
+    "qs:a2r_lc":"2",
+    "qs:adm0":"France",
+    "qs:adm0_a3":"FRA",
+    "qs:la":"BOURG-EN-BRESSE",
+    "qs:la_lc":"01053",
+    "qs:level":"localadmin",
+    "qs:source":"France IGN",
+    "qs:type":"Pr\u00e9fecture",
+    "src:geom":"quattroshapes",
+    "wof:belongsto":[
+        85683153,
+        102191581,
+        85633147,
+        404227797,
+        1108826389,
+        136253037,
+        102072433
+    ],
+    "wof:breaches":[],
+    "wof:concordances":{},
+    "wof:country":"FR",
+    "wof:geomhash":"b5e8ac7578e0a79bc781feaf46b46cac",
+    "wof:hierarchy":[
+        {
+            "continent_id":102191581,
+            "country_id":85633147,
+            "county_id":102072433,
+            "empire_id":136253037,
+            "localadmin_id":404413457,
+            "macrocounty_id":404227797,
+            "macroregion_id":1108826389,
+            "region_id":85683153
+        }
+    ],
+    "wof:id":404413457,
+    "wof:lastmodified":1496506543,
+    "wof:name":"Bourg-En-Bresse",
+    "wof:parent_id":102072433,
+    "wof:placetype":"localadmin",
+    "wof:repo":"whosonfirst-data",
+    "wof:superseded_by":[],
+    "wof:supersedes":[],
+    "wof:tags":[]
+},
+  "bbox": [
+    5.20699694988846,
+    46.17594158163249,
+    5.28723878924296,
+    46.22826959986789
+],
+  "geometry": {"coordinates":[[[5.25673965362248,46.17614004371271],[5.23716312569385,46.17594158163249],[5.23444077112542,46.18232808804288],[5.22168412271825,46.19205502254339],[5.20699694988846,46.19132318845536],[5.2108990464125,46.2112098938661],[5.21588544604293,46.2119416029869],[5.21796037660974,46.22217069809798],[5.22483660587227,46.22722522713482],[5.24515321248917,46.22761875902523],[5.25909806875139,46.22363114702096],[5.27271090093918,46.22826959986789],[5.28723878924296,46.22585236299762],[5.28205168741589,46.21163290880167],[5.27419859088657,46.20844806531691],[5.2743368474797,46.19364421921333],[5.25449206773058,46.17919350307299],[5.25673965362248,46.17614004371271]]],"type":"Polygon"}
+}

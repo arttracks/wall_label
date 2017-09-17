@@ -1,0 +1,68 @@
+{
+  "id": 119381743,
+  "type": "Feature",
+  "properties": {
+    "addr:full":"Recorded Information, Waddesdon Aylesbury Buckinghamshire HP18 0JH",
+    "addr:housenumber":"waddesdon",
+    "addr:postcode":"hp18 0jh",
+    "addr:street":"Aylesbury",
+    "edtf:cessation":"uuuu",
+    "edtf:inception":"uuuu",
+    "geom:area":0.0,
+    "geom:bbox":"-0.919449,51.846096,-0.919449,51.846096",
+    "geom:latitude":51.846096,
+    "geom:longitude":-0.919449,
+    "iso:country":"GB",
+    "mz:hierarchy_label":1,
+    "sg:address":"Recorded Information, Waddesdon",
+    "sg:city":"Aylesbury",
+    "sg:classifiers":[
+        {
+            "category":"Landmark",
+            "subcategory":"Tourist Attraction",
+            "type":"Public Place"
+        }
+    ],
+    "sg:owner":"simplegeo",
+    "sg:phone":"+44 1296 653203",
+    "sg:postcode":"HP18 0JH",
+    "sg:province":"Buckinghamshire",
+    "sg:tags":[
+        "interest"
+    ],
+    "src:geom":"simplegeo",
+    "wof:belongsto":[
+        85633159,
+        85684231
+    ],
+    "wof:breaches":[],
+    "wof:concordances":{
+        "sg:id":"SG_3ZbunIFD1HCqHCMi7XqKzM_51.846096_-0.919449@1300740113"
+    },
+    "wof:country":"GB",
+    "wof:geomhash":"f4139c98d1982147e205a894d7f9c44f",
+    "wof:hierarchy":[
+        {
+            "country_id":85633159,
+            "region_id":85684231,
+            "venue_id":119381743
+        }
+    ],
+    "wof:id":119381743,
+    "wof:lastmodified":1472266546,
+    "wof:name":"Waddesdon Manor National Trust",
+    "wof:parent_id":85684231,
+    "wof:placetype":"venue",
+    "wof:repo":"whosonfirst-data-venue-gb",
+    "wof:superseded_by":[],
+    "wof:supersedes":[],
+    "wof:tags":[]
+},
+  "bbox": [
+    -0.919449,
+    51.846096,
+    -0.919449,
+    51.846096
+],
+  "geometry": {"coordinates":[-0.919449,51.846096],"type":"Point"}
+}

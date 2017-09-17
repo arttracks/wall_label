@@ -1,0 +1,77 @@
+{
+  "id": 219405921,
+  "type": "Feature",
+  "properties": {
+    "addr:full":"45-53 Iffley Road Oxford Oxfordshire OX4 1ED",
+    "addr:housenumber":"45-53",
+    "addr:postcode":"ox4 1ed",
+    "addr:street":"Iffley Road",
+    "edtf:cessation":"uuuu",
+    "edtf:inception":"uuuu",
+    "geom:area":0.0,
+    "geom:bbox":"-1.242501,51.748234,-1.242501,51.748234",
+    "geom:latitude":51.748234,
+    "geom:longitude":-1.242501,
+    "iso:country":"GB",
+    "mz:hierarchy_label":1,
+    "sg:address":"45-53 Iffley Road",
+    "sg:city":"Oxford",
+    "sg:classifiers":[
+        {
+            "category":"Travel",
+            "subcategory":"Hotels & Motels",
+            "type":"Entertainment"
+        }
+    ],
+    "sg:owner":"simplegeo",
+    "sg:phone":"+44 1865 212493",
+    "sg:postcode":"OX4 1ED",
+    "sg:province":"Oxfordshire",
+    "sg:tags":[
+        "house",
+        "guest"
+    ],
+    "src:geom":"simplegeo",
+    "wof:belongsto":[
+        85793243,
+        85633159,
+        101750439,
+        85683867
+    ],
+    "wof:breaches":[],
+    "wof:concordances":{
+        "sg:id":"SG_2F8tvWlj3yzPqKyeeJOwVP_51.748234_-1.242501@1300740540"
+    },
+    "wof:country":"GB",
+    "wof:geomhash":"5dfcf385e3e060b17fa93b03b5e18180",
+    "wof:hierarchy":[
+        {
+            "continent_id":-1,
+            "country_id":85633159,
+            "locality_id":101750439,
+            "neighbourhood_id":85793243,
+            "region_id":85683867,
+            "venue_id":219405921
+        }
+    ],
+    "wof:id":219405921,
+    "wof:lastmodified":1472258262,
+    "wof:name":"The University of Oxford",
+    "wof:parent_id":85793243,
+    "wof:placetype":"venue",
+    "wof:repo":"whosonfirst-data-venue-gb",
+    "wof:superseded_by":[],
+    "wof:supersedes":[],
+    "wof:tags":[
+        "house",
+        "guest"
+    ]
+},
+  "bbox": [
+    -1.242501,
+    51.748234,
+    -1.242501,
+    51.748234
+],
+  "geometry": {"coordinates":[-1.242501,51.748234],"type":"Point"}
+}

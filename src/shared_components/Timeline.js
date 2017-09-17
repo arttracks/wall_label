@@ -1,7 +1,8 @@
 // External Components
 import React, { Component } from 'react';
-import { scaleLinear } from 'd3-scale'
-
+import ReactDOM from 'react-dom';
+import * as d3 from "d3";
+import { scaleLinear } from 'd3-scale'; 
 // Internal Components
 
 // Assets
@@ -9,63 +10,77 @@ import './Timeline.css';
 
 class Timeline extends Component {
 
-  render() {
-    // Fail early if this isn't instantiated.
-    const parentDomNode = document.getElementById(this.props.parentId);
-    if (!parentDomNode) return false;
+  constructor(props) {
+    super(props);
+    this.state = {todayYear: new Date().getFullYear()};
+  }
+
+  componentDidMount() {
 
     // Set up some initial parameters and tools
+    const parentDomNode = document.getElementById(this.props.parentId);
     const width = parentDomNode.offsetWidth;
     const textMargin = 60;
     const lineWidth = width-textMargin*2;
-    const todayYear = new Date().getFullYear();
     const startYear = this.props.startYear;
+    const todayYear = this.state.todayYear;
 
-
-    let x = null;
+    // Instantiate the scale
+    let x, domain, range = null;
     if (this.props.expansion) {
-      x = (input) => {
+      const exp = this.props.expansion;
+      const mult = exp.ratio || 1.5;
 
-        const exp = this.props.expansion;
-        const mult = exp.ratio || 1.5;
+      const duration = todayYear - startYear;
+      const expDuration = exp.end - exp.start;
+      const startDuration = exp.start - startYear;
+      const endDuration = todayYear - exp.end;
+      const ratio = expDuration/duration;
+      const remainingRatio = endDuration/startDuration;
+      const remainingSpace = (1-ratio*mult)
+      const startPercent = remainingSpace * (1-remainingRatio);
+      const endPercent = 1-remainingSpace *remainingRatio;
 
-        const duration = todayYear - startYear;
-        const expDuration = exp.end - exp.start;
-        const startDuration = exp.start - startYear;
-        const endDuration = todayYear - exp.end;
-        const ratio = expDuration/duration;
-        const remainingRatio = endDuration/startDuration;
-        const remainingSpace = (1-ratio*mult)
-        const startPercent = remainingSpace * (1-remainingRatio);
-        const endPercent = 1-remainingSpace *remainingRatio;
-
-        const startScale = scaleLinear()
-        .domain([startYear, exp.start])
-        .range([0, lineWidth*startPercent]);
-
-        const middleScale = scaleLinear()
-        .domain([exp.start, exp.end])
-        .range([lineWidth*startPercent, lineWidth*endPercent]);
-
-        const endScale = scaleLinear()
-        .domain([exp.end, todayYear])
-        .range([lineWidth*endPercent, lineWidth]);
-
-
-
-        let chosenScale = null
-        if ( input < exp.start) {chosenScale =  startScale }
-        else if ( input < exp.end) {chosenScale = middleScale }
-        else { chosenScale = endScale }
-        return chosenScale(input)
-
-      }
+      domain = [startYear, exp.start,exp.end, todayYear]
+      range = [0, lineWidth*startPercent, lineWidth*endPercent, lineWidth]
     }
     else {
-      x = scaleLinear()
-        .domain([this.props.startYear, todayYear])
-        .range([0, lineWidth]);
+     domain = [this.props.startYear, todayYear]
+     range = [0, lineWidth]
     }
+     x = scaleLinear()
+        .domain(domain)
+        .range(range);
+
+    // Pass these onto the component as state
+    this.setState({x: x, width: width, lineWidth: lineWidth, textMargin: textMargin})
+  }
+
+  // On each update:
+  componentWillReceiveProps(nextProps) {
+        let transition = d3.transition().duration(1000*nextProps.delay).ease(d3.easeLinear);
+
+        let node = d3.select(ReactDOM.findDOMNode(this));
+        if (node == null) {return;}
+        node = node.select(".movingBar")
+  
+        node.transition(transition)
+          .attr('width', this.state.x(1+nextProps.currentYear))
+    }
+
+  actionFunction(evt) {
+    if (evt.buttons !== 1) return;
+    if (!this.props.setYear) return;
+    let val = evt.clientX-60
+    let year = Math.floor(this.state.x.invert(val))
+    console.log(year)
+    this.props.setYear(year);
+  }
+
+  // Actually draw thie thing:
+  render() {
+    let x = this.state.x;
+    if (!x) {return null}
 
     // build the ratio box
     let expansionLabel = null;
@@ -85,7 +100,6 @@ class Timeline extends Component {
       )
     }
 
-
     // Build the hash marks for the ownership events
     let eventHashes = null;
     if (this.props.eventList) {
@@ -97,10 +111,10 @@ class Timeline extends Component {
     // Build optional tick marks
     let ticks = null;
     if (this.props.tickInterval) {
-      let i = startYear;
+      let i = this.props.startYear;
       ticks = []
-      while (i < todayYear) {
-        ticks.push(<rect y="12" width="1" height="4" x={x(i)} />)
+      while (i < this.state.todayYear) {
+        ticks.push(<rect y="12" width="1" height="4" x={x(i)} key={"tick_"+i}/>)
         i += (+this.props.tickInterval);
       }
     }
@@ -127,7 +141,7 @@ class Timeline extends Component {
           <g key={index} className={klass} transform={`translate(${x(moment.year)} 10)`}>
               {yearCaption}
               <rect width="1" height="30" />
-              <text y="35" x="-9.5">★</text>
+              <text className="star_symbol" y="35" x="0.5">★</text>
               {title}
           </g>
         )
@@ -135,16 +149,26 @@ class Timeline extends Component {
     }
 
     // Draw the SVG
-    return <svg width={width} height="50"  className="timeline" overflow="visible">
+    return <svg width={this.state.width} height="50"  className="timeline" overflow="visible">
      <text y="15" x="5">{this.props.startYear}</text>
-     <text y="15" x={lineWidth+textMargin + 10}>{todayYear}</text>
-     <g transform={`translate(${textMargin} 0)`}>
-       {moments}
-       {ticks}
-       {eventHashes}
-       {expansionLabel}
-       <rect y="10" width={lineWidth} height="2" />
-       <rect y="8" width={x(this.props.currentYear)} height="6" />
+     <text y="15" x={this.state.lineWidth+this.state.textMargin + 10}>{this.state.todayYear}</text>
+     <g transform={`translate(${this.state.textMargin} 0)`}>
+      <rect y="10" width={this.state.lineWidth} height="2"/>
+      <rect className='movingBar' y="8" width={x(this.props.currentYear)} height="6" />
+      {ticks}
+      <rect 
+        className='touch_target' 
+        y="-10" 
+        width={this.state.lineWidth} 
+        height="35" 
+        onTouchMove={this.actionFunction.bind(this)} 
+        onMouseMove={this.actionFunction.bind(this)} 
+        onTouchStart={this.actionFunction.bind(this)} 
+        onMouseDown={this.actionFunction.bind(this)}
+      />
+      {moments}
+      {eventHashes}
+      {expansionLabel}
     </g>
    </svg>
   }

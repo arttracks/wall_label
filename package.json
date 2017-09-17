@@ -4,17 +4,19 @@
   "private": true,
   "homepage": "https://northbrook-interactive.netlify.com",
   "dependencies": {
+    "d3": "^4.10.2",
     "d3-scale": "^1.0.6",
     "d3-transition": "^1.1.0",
     "jquery": "^3.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "topojson": "^3.0.2"
   },
   "devDependencies": {
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "0.9.5"
+    "react-scripts": "1.0.13"
   },
   "scripts": {
     "start-js": "react-scripts start",

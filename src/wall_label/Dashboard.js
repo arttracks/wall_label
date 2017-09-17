@@ -46,6 +46,7 @@ class Dashboard extends Component {
           eventList={this.props.objectData.events}
           currentYear={this.state.currentYear}
           moments={this.props.objectData.moments}
+          delay="0.1"
           currentMoment={this.props.moment}
         ></Timeline>
       </div>

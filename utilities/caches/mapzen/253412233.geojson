@@ -1,0 +1,63 @@
+{
+  "id": 253412233,
+  "type": "Feature",
+  "properties": {
+    "addr:full":"Postbus 155 'S-Heerenberg 7040 AD",
+    "addr:housenumber":"155",
+    "addr:postcode":"7040 ad",
+    "addr:street":"Postbus",
+    "edtf:cessation":"uuuu",
+    "edtf:inception":"uuuu",
+    "geom:area":0.0,
+    "geom:bbox":"6.24458,51.875671,6.24458,51.875671",
+    "geom:latitude":51.875671,
+    "geom:longitude":6.24458,
+    "iso:country":"NL",
+    "mz:hierarchy_label":1,
+    "sg:address":"Postbus 155",
+    "sg:city":"'S-Heerenberg",
+    "sg:classifiers":[],
+    "sg:orig_category":"Musea",
+    "sg:owner":"simplegeo",
+    "sg:phone":"+31 314 661 281",
+    "sg:postcode":"7040 AD",
+    "src:geom":"simplegeo",
+    "wof:belongsto":[
+        85633337,
+        101809877,
+        85687043
+    ],
+    "wof:breaches":[],
+    "wof:concordances":{
+        "sg:id":"SG_7Addgi0sTQ8IXIEfyplXQo_51.875671_6.244580@1306269949"
+    },
+    "wof:country":"NL",
+    "wof:geomhash":"2cb167b939a89496bae06ecdc9315f28",
+    "wof:hierarchy":[
+        {
+            "continent_id":-1,
+            "country_id":85633337,
+            "locality_id":101809877,
+            "neighbourhood_id":-1,
+            "region_id":85687043,
+            "venue_id":253412233
+        }
+    ],
+    "wof:id":253412233,
+    "wof:lastmodified":1473879552,
+    "wof:name":"Kasteel Huis Bergh",
+    "wof:parent_id":-1,
+    "wof:placetype":"venue",
+    "wof:repo":"whosonfirst-data-venue-nl",
+    "wof:superseded_by":[],
+    "wof:supersedes":[],
+    "wof:tags":[]
+},
+  "bbox": [
+    6.24458,
+    51.875671,
+    6.24458,
+    51.875671
+],
+  "geometry": {"coordinates":[6.24458,51.875671],"type":"Point"}
+}

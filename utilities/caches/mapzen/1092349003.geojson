@@ -1,0 +1,73 @@
+{
+  "id": 1092349003,
+  "type": "Feature",
+  "properties": {
+    "addr:full":"F\u00fcrsteng 1 Wien Wien 1090",
+    "addr:housenumber":"1",
+    "addr:postcode":"1090",
+    "addr:street":"Fuersteng",
+    "edtf:cessation":"uuuu",
+    "edtf:inception":"uuuu",
+    "geom:area":0.0,
+    "geom:area_square_m":0.0,
+    "geom:bbox":"16.351474762,48.2234115601,16.351474762,48.2234115601",
+    "geom:latitude":48.223412,
+    "geom:longitude":16.351475,
+    "iso:country":"AT",
+    "mz:hierarchy_label":1,
+    "sg:address":"F\u00fcrsteng 1",
+    "sg:city":"Wien",
+    "sg:classifiers":[],
+    "sg:orig_category":"Museen / Ausstellungen",
+    "sg:owner":"simplegeo",
+    "sg:phone":"+43 1 31957670",
+    "sg:postcode":"1090",
+    "sg:province":"Wien",
+    "sg:website":"liechtensteinmuseum.at",
+    "src:geom":"simplegeo",
+    "wof:belongsto":[
+        85898633,
+        102191581,
+        1108838101,
+        85632785,
+        101748073,
+        102049859,
+        85681667
+    ],
+    "wof:breaches":[],
+    "wof:concordances":{
+        "sg:id":"SG_12YCZGKAmmyMdwZXSAHhih_48.223412_16.351475@1306268306"
+    },
+    "wof:country":"AT",
+    "wof:created":1473912026,
+    "wof:geomhash":"fec2d0e4a8d896d6c08aecebae7d8a3d",
+    "wof:hierarchy":[
+        {
+            "continent_id":102191581,
+            "country_id":85632785,
+            "county_id":102049859,
+            "localadmin_id":1108838101,
+            "locality_id":101748073,
+            "neighbourhood_id":85898633,
+            "region_id":85681667,
+            "venue_id":1092349003
+        }
+    ],
+    "wof:id":1092349003,
+    "wof:lastmodified":1496903745,
+    "wof:name":"Liechtenstein Museum - Die f\u00fcrstlichen Sammlungen",
+    "wof:parent_id":85898633,
+    "wof:placetype":"venue",
+    "wof:repo":"whosonfirst-data-venue-at",
+    "wof:superseded_by":[],
+    "wof:supersedes":[],
+    "wof:tags":[]
+},
+  "bbox": [
+    16.351474762,
+    48.2234115601,
+    16.351474762,
+    48.2234115601
+],
+  "geometry": {"coordinates":[16.351474762,48.2234115601],"type":"Point"}
+}

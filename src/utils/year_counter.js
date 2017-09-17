@@ -23,6 +23,13 @@ class YearCounter {
     this.onStart();
   }
 
+  setYear(year) {
+    this.onExit();
+    this.currentYear = year;
+    this.onStart();
+    this.updateCallback(this.currentYear);
+  }
+
 
   // Private methods
   //----------------------------------------------------------------------------

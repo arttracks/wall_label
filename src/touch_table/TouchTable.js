@@ -9,6 +9,7 @@ import Timeline    from "../shared_components/Timeline.js"
 import YearCounter from "../utils/year_counter.js"
 import Button      from "../shared_components/Button.js"
 import DateContext from "./DateContext.js"
+import WorldMap    from "./WorldMap.js"
 
 
 // Assets
@@ -37,45 +38,46 @@ class TouchTable extends Component {
 
   render() {
 
-    // let currentMoment = 0;
-    // let found = false;
-    // while (!found) {
-    //   if (data.moment[currentMoment +1]) {
-    //     let d1 = data.moment[currentMoment]
-    //     let d2 = data.moment[currentMoment+1]
-    //     let y = this.state.currentYear
-    //     if (Math.abs(d2-y) > Math.abs(d1-y)) {
-    //       found = true
-    //     } else {
-    //       currentMoment += 1;
-    //     }
-    //   } else {found = true}
-    // }
+    const yearsRemaining = (new Date().getFullYear()-this.state.currentYear );
+    const finalOpacity =  yearsRemaining > 10 ? 1 : yearsRemaining/10;
 
     return (
       <div className="TouchTable" id="table">
 
-        <div className="sidebar">
-          <DateContext data={data.context} year={this.state.currentYear} offset={-50} />
-          <div className='current_date'>{this.state.currentYear}</div>
-          <DateContext data={data.context} year={this.state.currentYear} offset={50} />
+        <div className="sidebar" >
+          
+          <div  style={{opacity: finalOpacity, height: "100%"}}>
+            <DateContext data={data.context} year={this.state.currentYear} offset={-50} delay="0.2" />
+            <div className='current_date'>{this.state.currentYear}</div>
+            <DateContext data={data.context} year={this.state.currentYear} offset={50} delay="0.2" />
+          </div>
+
+          <div className="replay_notice" style={{opacity: (yearsRemaining <= 0 ? 1 : 0)}}>
+            <p>How did the Northbrook Collection end up here?</p>
+            <p className='smaller'>Touch below to find out.</p>
+          </div>
+          
         </div>
 
-        <div className="map" onClick={()=> {$(".overlay").show(); return false} }
->
-        </div>
-
+        <WorldMap 
+          startYear={data.startYear}
+          currentYear={this.state.currentYear}
+          />
+        
         <div className="controls">
           <div className="control_section" id="control_section">
+            
             <Timeline
-            parentId="control_section"
-            startYear={data.startYear}
-            currentYear={this.state.currentYear}
-            moments={data.moments}
-            currentMoment={this.state.currentMoment}
-            tickInterval="5"
-            showLabel
-            expansion={ {start: 1750, end: 1930, ratio:1.8, label: "The Northbrook Era" } }/>
+              parentId="control_section"
+              startYear={data.startYear}
+              currentYear={this.state.currentYear}
+              moments={data.moments}
+              currentMoment={this.state.currentMoment}
+              delay="0.2"
+              tickInterval="5"
+              setYear={this.counter.setYear.bind(this.counter)}
+              showLabel
+              expansion={ {start: 1750, end: 1930, ratio:1.8, label: "The Northbrook Era" } }/>
 
             <Button
               text="Restart"

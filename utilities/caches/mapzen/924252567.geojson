@@ -1,0 +1,81 @@
+{
+  "id": 924252567,
+  "type": "Feature",
+  "properties": {
+    "addr:full":"Trafalgar Square London Greater London WC2N 5DN",
+    "addr:housenumber":"",
+    "addr:postcode":"wc2n 5dn",
+    "addr:street":"Trafalgar Square",
+    "edtf:cessation":"uuuu",
+    "edtf:inception":"uuuu",
+    "geom:area":0.0,
+    "geom:bbox":"-0.1276600063,51.5090408325,-0.1276600063,51.5090408325",
+    "geom:latitude":51.509041,
+    "geom:longitude":-0.12766,
+    "iso:country":"GB",
+    "mz:hierarchy_label":1,
+    "sg:address":"Trafalgar Square",
+    "sg:city":"London",
+    "sg:classifiers":[
+        {
+            "category":"Museum",
+            "subcategory":"Art Museum",
+            "type":"Entertainment"
+        }
+    ],
+    "sg:owner":"simplegeo",
+    "sg:phone":"+44 20 7839 3321",
+    "sg:postcode":"WC2N 5DN",
+    "sg:province":"Greater London",
+    "sg:tags":[
+        "gallery"
+    ],
+    "src:geom":"simplegeo",
+    "wof:belongsto":[
+        85786429,
+        "102191581",
+        404435563,
+        "85633159",
+        404227469,
+        101750367,
+        85684061
+    ],
+    "wof:breaches":[],
+    "wof:concordances":{
+        "sg:id":"SG_3TAvF1fJBT2WyZW1nX3uG5_51.509041_-0.127660@1300740759"
+    },
+    "wof:country":"GB",
+    "wof:created":1471952672,
+    "wof:geomhash":"c3037f576c4567f93e821d3c3217f5f3",
+    "wof:hierarchy":[
+        {
+            "continent_id":"102191581",
+            "country_id":"85633159",
+            "localadmin_id":404435563,
+            "locality_id":101750367,
+            "macroregion_id":404227469,
+            "neighbourhood_id":85786429,
+            "region_id":85684061,
+            "venue_id":924252567
+        }
+    ],
+    "wof:id":924252567,
+    "wof:lastmodified":1472268709,
+    "wof:name":"The National Gallery",
+    "wof:parent_id":85786429,
+    "wof:placetype":"venue",
+    "wof:repo":"whosonfirst-data-venue-gb",
+    "wof:superseded_by":[],
+    "wof:supersedes":[],
+    "wof:tags":[
+        "gallery"
+    ]
+},
+  "bbox": [
+    -0.1276600063,
+    51.5090408325,
+    -0.1276600063,
+    51.5090408325
+],
+  "geometry": {"coordinates":[-0.1276600063,51.5090408325],"type":"Point"}
+}
