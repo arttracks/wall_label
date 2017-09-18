@@ -15,14 +15,17 @@ import './WorldMap.css';
 import mapData from "../data/world_map.json"
 import eventData from "../data/painting_events.json"
 
+
 //------------------------------------------------------------------------------
 class WorldMap extends Component {
 
+  //----------------------------------------------------------------------------
   // constructor(props) {
   //   super(props);
   //   // this.state = {todayYear: new Date().getFullYear()};
   // }
 
+  //----------------------------------------------------------------------------
   componentDidMount() {
     let svg = d3.select(".map").append("svg")
     .attr("width", "100%")
@@ -36,67 +39,95 @@ class WorldMap extends Component {
         .enter().append( 'path' )
         .attr( 'class', 'land' )
         .attr( 'd', path );
-    this.setState({svg: svg, projection: projection})
+    this.setState({svg: svg})
 
+    this.addGradients(svg)
 
-    var radialGradient = svg.append("defs")
-      .append("radialGradient")
-        .attr("id", "radial-gradient");
-
-    radialGradient.append("stop")
-        .attr("offset", "%")
-        .attr("stop-color", "rgba(0,0,0,1)");
-    radialGradient.append("stop")
-        .attr("offset", "20%")
-        .attr("stop-color", "rgba(0,0,0,0.05)");
-    radialGradient.append("stop")
-        .attr("offset", "100%")
-        .attr("stop-color", "rgba(0,0,0,0)");
   }
 
+  //----------------------------------------------------------------------------
   processData(data, currentYear) {
     return data.map( e=> {
+
       const firstValid = e.events.findIndex(event => event.year <= currentYear)
       if (firstValid === -1) {return null}
       
       let lastValid = e.events.findIndex(event => event.year > currentYear) -1
       if (lastValid === -2) {lastValid = (e.events.length -1)}    
-
-      if (e.events[lastValid] === undefined) { console.log("problem",lastValid,e); return null}
-      return {id: e.id, lat: e.events[lastValid].lat, lng: e.events[lastValid].lng}
+      
+      let returnValue = {
+        idVal:   e.id, 
+        lat:  e.events[lastValid].lat, 
+        lng:  e.events[lastValid].lng, 
+        year: e.events[lastValid].year,
+        lastValid: lastValid
+      }
+      if (lastValid > 0) {
+        returnValue.prevLat = e.events[lastValid-1].lat
+        returnValue.prevLng = e.events[lastValid-1].lng 
+      }
+      else {
+       returnValue.prevLat = e.events[lastValid].lat
+       returnValue.prevLng = e.events[lastValid].lng  
+      }
+      return returnValue
     }).filter(n => n)
   }
 
 
+  //----------------------------------------------------------------------------
   componentWillReceiveProps(nextProps) {
 
     const processedData = this.processData(eventData, nextProps.currentYear);
     const projection = this.getProjection();
-    let circles = this.state.svg.selectAll("g.point").data(processedData, function(d) { return d.id; })
 
-    circles.exit().remove();
+    let eventIcons = this.state.svg.selectAll("g.event_icon").data(processedData, d=>d.idVal)
 
-    let groups = circles.enter().append("g").attr("class", "point")
-      // groups.append("circle").attr("class", "dot")
-      groups.append("circle").attr("class", "heatmap").style("fill", "url(#radial-gradient)");
+    eventIcons.exit().remove();
 
-
-    circles = groups.merge(circles);
-    circles
-      .attr("transform",d=> {const loc = projection([d.lng,d.lat]); return `translate(${loc[0]},${loc[1]})`})
-    // circles.selectAll(".dot")
-    //   .attr("r", 2)
-    circles.selectAll(".heatmap")
+    let newIcons = eventIcons.enter()
+      .append("g").attr("class", "event_icon")
+    newIcons.append("circle")
+      .attr("class", "heatmap")
       .attr("r", 5)
-        
+      .style("fill", "url(#radial-gradient)")
+    newIcons.append("line")
+      .attr("class", "transitLine")
+      .style("stroke", "url(#transit-gradient)")
+      .style("stroke-width", 1)
 
+    var trans = d3.transition()
+    .duration(200)
+    .ease(d3.easeLinear);
 
-   // debugger
-    // Do something here with dots.
+    eventIcons = newIcons.merge(eventIcons)
+      .attr("data-debug", d=>`${JSON.stringify(d)}`)
+    eventIcons.select(".heatmap")
+      .attr("cx", d=> projection([d.lng,d.lat])[0])
+      .attr("cy", d=> projection([d.lng,d.lat])[1])
+    eventIcons.select(".transitLine")
+      .attr("x1", d=> projection([d.lng,d.lat])[0])
+      .attr("y1", d=> projection([d.lng,d.lat])[1])
+      .attr("x2", d=> projection([d.prevLng,d.prevLat])[0])
+      .attr("y2", d=> projection([d.prevLng,d.prevLat])[1])
+      .transition(trans).attr("opacity", d=>Math.max(0,(1-(nextProps.currentYear-d. year)*0.2)) )
   }
 
+  //----------------------------------------------------------------------------
   shouldComponentUpdate() {return false}
- 
+
+  //----------------------------------------------------------------------------
+  render() {
+    return (
+      <div className="map" onClick={()=> {$(".overlay").show(); return false} }></div>
+    )
+  }
+
+  //--------------------
+  // UTILITY METHODS   | 
+  //--------------------
+
+  //----------------------------------------------------------------------------
   getProjection() {
     var jMap = $(".map");
     const height = jMap.height();
@@ -105,30 +136,47 @@ class WorldMap extends Component {
     let scale = 1;
     
     const offset = [width / 2, height / 2 ];
-    const projection = d3.geoEquirectangular().scale( scale ).rotate( [0,0] ).center([0,5]).translate( offset );
+    const projection = d3.geoEquirectangular()
+                         .scale( scale )
+                         .rotate( [0,0] )
+                         .center([0,5])
+                         .translate( offset );
    
-    projection.scale( 1600 );
-    projection.center([8.8578, 46.9762])
+    projection.scale( 2100 );
+    projection.center([6.8578, 47.9762])
 
     return projection;
   }
 
-  mercatorBounds(projection) {
-  // find the top left and bottom right of current projection
-  var maxlat = 83,
-      yaw = projection.rotate()[ 0 ],
-      xymax = projection( [ -yaw + 180 - 1e-6, -maxlat ] ),
-      xymin = projection( [ -yaw - 180 + 1e-6, maxlat ] );
+  //----------------------------------------------------------------------------
+  addGradients(svg) {
+    let defs = svg.append("defs")
 
-   return [ xymin, xymax ];
-  };
+    let radialGradient = defs.append("radialGradient")
+        .attr("id", "radial-gradient");
 
+    radialGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "rgba(0,0,0,1)");
+    radialGradient.append("stop")
+        .attr("offset", "20%")
+        .attr("stop-color", "rgba(0,0,0,0.05)");
+    radialGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", "rgba(0,0,0,0)");   
 
-  render() {
-    return (
-      <div className="map" onClick={()=> {$(".overlay").show(); return false} }></div>
-    )
+    let linearGradient = defs.append("radialGradient")
+        .attr("id", "transit-gradient");
+
+    linearGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "rgba(0,0,0,.75)");
+
+    linearGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", "rgba(0,0,0,.1)");   
   }
+
 }
 
 export default WorldMap;

@@ -73,7 +73,6 @@ class Timeline extends Component {
     if (!this.props.setYear) return;
     let val = evt.clientX-60
     let year = Math.floor(this.state.x.invert(val))
-    console.log(year)
     this.props.setYear(year);
   }
 

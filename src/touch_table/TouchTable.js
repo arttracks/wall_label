@@ -22,7 +22,7 @@ class TouchTable extends Component {
 
   constructor(props) {
       super(props);
-      this.state = {currentMoment: null};
+      this.state = {currentMoment: null, currentYear: 1500};
 
       const yearCallback = year => {this.setState({currentYear: year})};
       this.counter = new YearCounter(data.startYear,.2,yearCallback);
