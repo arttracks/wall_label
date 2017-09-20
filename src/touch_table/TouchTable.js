@@ -16,7 +16,7 @@ import WorldMap    from "./WorldMap.js"
 //------------------------
 import './TouchTable.css';
 import data from "../data/table_data.json"
-import overlay from "../assets/overlay.png"
+import overlay from "../assets/beginnings.png"
 //------------------------------------------------------------------------------
 class TouchTable extends Component {
 
@@ -53,8 +53,8 @@ class TouchTable extends Component {
           </div>
 
           <div className="replay_notice" style={{opacity: (yearsRemaining <= 0 ? 1 : 0)}}>
-            <p>How did the Northbrook Collection end up here?</p>
-            <p className='smaller'>Touch below to find out.</p>
+            <p>These 7 pictures were once in the famous Northbrook collection.</p>
+            <p className='smaller'>Touch below to see how paintings moved in and out of this collection.</p>
           </div>
           
         </div>

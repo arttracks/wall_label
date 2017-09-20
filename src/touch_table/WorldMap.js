@@ -30,16 +30,18 @@ class WorldMap extends Component {
     let svg = d3.select(".map").append("svg")
     .attr("width", "100%")
     .attr("height", "100%");
-  
+    
+    let g = svg.append("g")
+
     const projection = this.getProjection();
     const path = d3.geoPath().projection( projection );
   
-    svg.selectAll( 'path.land' )
+    g.selectAll( 'path.land' )
         .data( topojson.feature( mapData, mapData.objects.countries ).features )
         .enter().append( 'path' )
         .attr( 'class', 'land' )
         .attr( 'd', path );
-    this.setState({svg: svg})
+    this.setState({svg: g})
 
     this.addGradients(svg)
 
@@ -79,17 +81,43 @@ class WorldMap extends Component {
   componentWillReceiveProps(nextProps) {
 
     const processedData = this.processData(eventData, nextProps.currentYear);
-    const projection = this.getProjection();
+    const projection = this.getProjection(nextProps.currentYear);
 
+    const year = nextProps.currentYear;
     let eventIcons = this.state.svg.selectAll("g.event_icon").data(processedData, d=>d.idVal)
 
     eventIcons.exit().remove();
+
+    const maxScale  = 1
+    const minScale  = 0.27
+    const startYear = 1870
+    const endYear   = 1925
+    const startX = 0
+    const startY = 0
+    const endX = 1100
+    const endY = 250
+    
+    let realScale = maxScale;
+    let xPos = 0
+    let yPos = 0
+    // if (year <= startYear) { realScale = maxScale}
+    if (year > startYear && year <= endYear) {
+     realScale = maxScale - (maxScale - minScale)/(endYear-startYear)*(year-startYear)
+     xPos = startX - (startX - endX)/(endYear-startYear)*(year-startYear)
+     yPos = startY - (startY - endY)/(endYear-startYear)*(year-startYear)
+    }
+    if ( year > endYear) { 
+      realScale = minScale
+      xPos = endX
+      yPos = endY
+    }
+
+
 
     let newIcons = eventIcons.enter()
       .append("g").attr("class", "event_icon")
     newIcons.append("circle")
       .attr("class", "heatmap")
-      .attr("r", 5)
       .style("fill", "url(#radial-gradient)")
     newIcons.append("line")
       .attr("class", "transitLine")
@@ -105,12 +133,21 @@ class WorldMap extends Component {
     eventIcons.select(".heatmap")
       .attr("cx", d=> projection([d.lng,d.lat])[0])
       .attr("cy", d=> projection([d.lng,d.lat])[1])
+      .attr("r", 5*(1/realScale))
+
     eventIcons.select(".transitLine")
       .attr("x1", d=> projection([d.lng,d.lat])[0])
       .attr("y1", d=> projection([d.lng,d.lat])[1])
       .attr("x2", d=> projection([d.prevLng,d.prevLat])[0])
       .attr("y2", d=> projection([d.prevLng,d.prevLat])[1])
-      .transition(trans).attr("opacity", d=>Math.max(0,(1-(nextProps.currentYear-d. year)*0.2)) )
+      .transition(trans).attr("opacity", d=>Math.max(0,(1-(year-d.year)*0.2)) )
+
+
+
+    this.state.svg
+      .transition(trans)
+      .attr("transform", `translate(${xPos},${yPos}) scale(${realScale})`)
+    // this.state.path.projection(projection);
   }
 
   //----------------------------------------------------------------------------
@@ -128,13 +165,14 @@ class WorldMap extends Component {
   //--------------------
 
   //----------------------------------------------------------------------------
-  getProjection() {
+  getProjection(year) {
     var jMap = $(".map");
     const height = jMap.height();
     const width = jMap.width();
 
     let scale = 1;
     
+
     const offset = [width / 2, height / 2 ];
     const projection = d3.geoEquirectangular()
                          .scale( scale )
@@ -142,6 +180,7 @@ class WorldMap extends Component {
                          .center([0,5])
                          .translate( offset );
    
+
     projection.scale( 2100 );
     projection.center([6.8578, 47.9762])
 
