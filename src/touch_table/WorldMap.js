@@ -128,21 +128,62 @@ class WorldMap extends Component {
     .duration(200)
     .ease(d3.easeLinear);
 
+    function getLen(d) {
+      let x2 = projection([d.prevLng,d.prevLat])[0]
+      let y2 = projection([d.prevLng,d.prevLat])[1]
+
+      let x1 = projection([d.lng,d.lat])[0]
+      let y1 = projection([d.lng,d.lat])[1]
+
+      return Math.sqrt((x2-x1)*(x2-x1)+((y2-y1)*(y2-y1)));
+    }
+
     eventIcons = newIcons.merge(eventIcons)
       .attr("data-debug", d=>`${JSON.stringify(d)}`)
     eventIcons.select(".heatmap")
-      .attr("cx", d=> projection([d.lng,d.lat])[0])
-      .attr("cy", d=> projection([d.lng,d.lat])[1])
+      .attr("cx", d=> {
+        if (year-d.year >5)  {
+          return projection([d.lng,d.lat])[0]
+        }
+        else if (year-d.year<=0) {
+          return projection([d.prevLng,d.prevLat])[0]
+        }
+        return -1000
+        // projection([d.lng,d.lat])[0]
+      })
+      .attr("cy", d=> {
+        if (year-d.year >5)  {
+          return projection([d.lng,d.lat])[1]
+        }
+        else if (year-d.year<0) {
+          return projection([d.prevLng,d.prevLat])[1]
+        }
+        return -1000
+
+      })
       .attr("r", 5*(1/realScale))
 
     eventIcons.select(".transitLine")
       .attr("x1", d=> projection([d.lng,d.lat])[0])
       .attr("y1", d=> projection([d.lng,d.lat])[1])
-      .attr("x2", d=> projection([d.prevLng,d.prevLat])[0])
+      .attr("x2", d=> projection([d.prevLng,d.prevLng])[0])
       .attr("y2", d=> projection([d.prevLng,d.prevLat])[1])
-      .transition(trans).attr("opacity", d=>Math.max(0,(1-(year-d.year)*0.2)) )
+      .attr("stroke-dasharray", d=>{
+        return `2 ${getLen(d)-2}`
+      })
 
-
+      .transition(trans)
+        .attr("opacity", d=>
+          {
+            //Math.max(0,(1-(year-d.year)*0.2)) 
+            return (year-d.year >=5) ? 0 : 1
+          })
+        .attr("stroke-dashoffset", d=>{
+          let offsetYear = year - d.year;
+          if (offsetYear > 5 || year == d.year) {return 0} 
+          return getLen(d)*offsetYear*0.2;
+        })
+        .attr("stroke-width", 2*1/realScale)
 
     this.state.svg
       .transition(trans)
