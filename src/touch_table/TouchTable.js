@@ -1,7 +1,6 @@
 // External Components
 //------------------------
 import React, { Component } from 'react';
-import $ from 'jquery';
 
 // Internal Components
 //------------------------
@@ -16,16 +15,22 @@ import WorldMap    from "./WorldMap.js"
 //------------------------
 import './TouchTable.css';
 import data from "../data/table_data.json"
-import overlay from "../assets/beginnings.png"
+const pathToOverlays = require.context('../assets/overlays', true);
+
 //------------------------------------------------------------------------------
 class TouchTable extends Component {
 
   constructor(props) {
       super(props);
-      this.state = {currentMoment: null, currentYear: 1500};
+      this.state = {currentMoment: null, currentYear: 1500, overlay: "", overlayVisible: false};
 
       const yearCallback = year => {this.setState({currentYear: year})};
       this.counter = new YearCounter(data.startYear,.2,yearCallback);
+      this.showOverlay = this.showOverlay.bind(this)
+  }
+
+  showOverlay(img) {
+    this.setState({overlay: pathToOverlays(`./${img}`, true), overlayVisible: true})
   }
 
   componentDidMount() {
@@ -40,6 +45,16 @@ class TouchTable extends Component {
 
     const yearsRemaining = (new Date().getFullYear()-this.state.currentYear );
     const finalOpacity =  yearsRemaining > 10 ? 1 : yearsRemaining/10;
+
+    let overlay = (
+      <div className="overlay">
+          <img
+            src={this.state.overlay}
+            alt=""
+            onClick={()=> this.setState({overlayVisible: false})}
+          />
+      </div>
+    )
 
     return (
       <div className="TouchTable" id="table">
@@ -72,11 +87,12 @@ class TouchTable extends Component {
               startYear={data.startYear}
               currentYear={this.state.currentYear}
               moments={data.moments}
-              currentMoment={this.state.currentMoment}
+              // currentMoment={this.state.currentMoment}
               delay="0.2"
               tickInterval="5"
               setYear={this.counter.setYear.bind(this.counter)}
               showLabel
+              overlayFunction={this.showOverlay}
               expansion={ {start: 1750, end: 1930, ratio:1.8, label: "The Northbrook Era" } }/>
 
             <Button
@@ -89,15 +105,7 @@ class TouchTable extends Component {
           </div>
 
         </div>
-
-        <div className="overlay">
-          <img
-            src={overlay}
-            alt=""
-            onClick={()=> $(".overlay").hide()}
-          />
-        </div>
-
+        {this.state.overlayVisible ? overlay : null}
       </div>
     );
   }

@@ -23,6 +23,13 @@ class YearCounter {
     this.onStart();
   }
 
+  pause() {
+    clearTimeout(this.timeoutId);
+  }
+  unpause() {
+    this._countUp()
+  }
+
   setYear(year) {
     this.onExit();
     this.currentYear = year;

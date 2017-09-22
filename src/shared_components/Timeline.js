@@ -137,7 +137,13 @@ class Timeline extends Component {
 
         const klass = index === +this.props.currentMoment ? "star" : "star disabled";
         return (
-          <g key={index} className={klass} transform={`translate(${x(moment.year)} 10)`}>
+          <g 
+            key={index} 
+            className={klass} 
+            transform={`translate(${x(moment.year)} 10)`}
+            onTouchStart={e => this.props.overlayFunction(moment.image)} 
+            onMouseDown={e => this.props.overlayFunction(moment.image)}
+          >
               {yearCaption}
               <rect width="1" height="30" />
               <text className="star_symbol" y="35" x="0.5">★</text>

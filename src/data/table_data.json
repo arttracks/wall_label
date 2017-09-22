@@ -3,7 +3,8 @@
   "moments": [
     { "year": 1762, "title": "The Beginning of the Barings", "image": "beginnings.png"},
     { "year": 1806, "title": "A Portrait of Wealth & Power", "image": "wealth_and_power.png"},
-    { "year": 1848, "title": "Sir Thomas's Sale", "image": "sir_thomass_sale.png"}
+    { "year": 1848, "title": "Sir Thomas's Sale", "image": "sir_thomass_sale.png"},
+    { "year": 2012, "title": "Today", "image": "northbrook_now.png"}
   ],
   "unused_moments": [
     { "year": 1790, "title": "The Collection Begins"},
