@@ -27,7 +27,7 @@ class YearCounter {
     clearTimeout(this.timeoutId);
   }
   unpause() {
-    this._countUp()
+    this._incrementYear()
   }
 
   setYear(year) {

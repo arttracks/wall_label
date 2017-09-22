@@ -13,3 +13,15 @@ $CONTROL_OFFSET: 110px
 .land
   fill: #ddd
   stroke: #ddd
+
+.transitLine 
+  stroke: rgba(0,0,0,0.25)
+  stroke-dasharray: 2 8
+  animation: dash 1s linear infinite
+
+
+@keyframes dash 
+  from 
+    stroke-dashoffset: 0
+  to 
+    stroke-dashoffset: 60

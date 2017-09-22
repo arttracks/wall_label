@@ -121,8 +121,8 @@ class WorldMap extends Component {
       .style("fill", "url(#radial-gradient)")
     newIcons.append("line")
       .attr("class", "transitLine")
-      .style("stroke", "url(#transit-gradient)")
-      .style("stroke-width", 1)
+      // .style("stroke", "url(#transit-gradient)")
+      // .style("stroke-width", 1)
 
     var trans = d3.transition()
     .duration(200)
@@ -147,6 +147,7 @@ class WorldMap extends Component {
     this.state.svg
       .transition(trans)
       .attr("transform", `translate(${xPos},${yPos}) scale(${realScale})`)
+      .attr("stroke-width", 1*(1/realScale))
     // this.state.path.projection(projection);
   }
 
@@ -204,16 +205,16 @@ class WorldMap extends Component {
         .attr("offset", "100%")
         .attr("stop-color", "rgba(0,0,0,0)");   
 
-    let linearGradient = defs.append("radialGradient")
-        .attr("id", "transit-gradient");
+    // let linearGradient = defs.append("radialGradient")
+    //     .attr("id", "transit-gradient");
 
-    linearGradient.append("stop")
-        .attr("offset", "0%")
-        .attr("stop-color", "rgba(0,0,0,.75)");
+    // linearGradient.append("stop")
+    //     .attr("offset", "0%")
+    //     .attr("stop-color", "rgba(0,0,0,.75)");
 
-    linearGradient.append("stop")
-        .attr("offset", "100%")
-        .attr("stop-color", "rgba(0,0,0,.1)");   
+    // // linearGradient.append("stop")
+    // //     .attr("offset", "100%")
+    // //     .attr("stop-color", "rgba(0,0,0,.1)");   
   }
 
 }

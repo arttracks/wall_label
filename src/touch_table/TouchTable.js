@@ -31,6 +31,7 @@ class TouchTable extends Component {
 
   showOverlay(img) {
     this.setState({overlay: pathToOverlays(`./${img}`, true), overlayVisible: true})
+    this.counter.pause()
   }
 
   componentDidMount() {
@@ -51,7 +52,7 @@ class TouchTable extends Component {
           <img
             src={this.state.overlay}
             alt=""
-            onClick={()=> this.setState({overlayVisible: false})}
+            onClick={()=> {this.setState({overlayVisible: false}); this.counter.unpause.call(this.counter)}}
           />
       </div>
     )
@@ -99,7 +100,7 @@ class TouchTable extends Component {
               text="Restart"
               cta="Touch Here."
               size="half"
-              action={this.counter.reset.bind(this.counter)}
+              action={() => {this.counter.reset.call(this.counter)}}
               />
 
           </div>
