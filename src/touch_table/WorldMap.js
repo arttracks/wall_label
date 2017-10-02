@@ -31,8 +31,8 @@ class WorldMap extends Component {
     this.addGradients(svg)
     const projection = this.getProjection();
     const path = d3.geoPath().projection(projection);
-    const g = svg.append("g")   
-  
+    const g = svg.append("g")
+
     g.append("g")
         .attr("class","landforms")
         .selectAll( 'path.land' )
@@ -41,10 +41,9 @@ class WorldMap extends Component {
         .attr( 'class', 'land' )
         .attr( 'd', path );
 
-
     this.setState({
       d3Object: g,
-      projection: projection    
+      projection: projection
     })
   }
 
@@ -60,24 +59,24 @@ class WorldMap extends Component {
 
       const firstValid = e.events.findIndex(event => event.year <= currentYear)
       if (firstValid === -1) {return null}
-      
+
       let lastValid = e.events.findIndex(event => event.year > currentYear) -1
-      if (lastValid === -2) {lastValid = (e.events.length -1)}    
-      
+      if (lastValid === -2) {lastValid = (e.events.length -1)}
+
       let returnValue = {
-        idVal:   e.id, 
-        lat:  e.events[lastValid].lat, 
-        lng:  e.events[lastValid].lng, 
+        idVal:   e.id,
+        lat:  e.events[lastValid].lat,
+        lng:  e.events[lastValid].lng,
         year: e.events[lastValid].year,
         lastValid: lastValid
       }
       if (lastValid > 0) {
         returnValue.prevLat = e.events[lastValid-1].lat
-        returnValue.prevLng = e.events[lastValid-1].lng 
+        returnValue.prevLng = e.events[lastValid-1].lng
       }
       else {
        returnValue.prevLat = e.events[lastValid].lat
-       returnValue.prevLng = e.events[lastValid].lng  
+       returnValue.prevLng = e.events[lastValid].lng
       }
       return returnValue
     }).filter(n => n)
@@ -87,7 +86,7 @@ class WorldMap extends Component {
   //----------------------------------------------------------------------------
   componentWillReceiveProps(nextProps) {
 
-    // Configuration 
+    // Configuration
     const maxScale  = 1
     const minScale  = 0.27
     const startYear = 1870
@@ -123,7 +122,7 @@ class WorldMap extends Component {
      xPos = startX - (startX - endX)/(endYear-startYear)*(year-startYear)
      yPos = startY - (startY - endY)/(endYear-startYear)*(year-startYear)
     }
-    else if ( year > endYear) { 
+    else if ( year > endYear) {
       realScale = minScale
       xPos = endX
       yPos = endY
@@ -141,13 +140,12 @@ class WorldMap extends Component {
       .append("g").attr("class", "event_icon")
     newIcons.append("circle")
       .attr("class", "heatmap")
-      .style("fill", "url(#radial-gradient)")
     newIcons.append("line")
       .attr("class", "transitLine")
 
     // On update, for the circles
     eventIcons = newIcons.merge(eventIcons)
-      // .attr("data-debug", d=>`${JSON.stringify(d)}`)
+      .attr("data-debug", d=>`${JSON.stringify(d)}`)
     eventIcons.select(".heatmap")
       .attr("cx", d=> {
         if (year-d.year >5)  {
@@ -168,6 +166,8 @@ class WorldMap extends Component {
         return -1000
       })
       .attr("r", 10*(1/realScale))
+      .style("fill", d=> [5,61,211,231,254,277,278].includes(d.idVal) ? "url(#special-radial-gradient)" : "url(#radial-gradient)")
+      .attr("z-index", d=> [5,61,211,231,254,277,278].includes(d.idVal) ? 1 : 0)
 
     // D3 for the lines
     eventIcons.select(".transitLine")
@@ -176,11 +176,12 @@ class WorldMap extends Component {
       .attr("x2", d=> projection([d.prevLng,d.prevLng])[0])
       .attr("y2", d=> projection([d.prevLng,d.prevLat])[1])
       .attr("stroke-dasharray", d=> `2 ${getLen(d)-2}`)
+      .style("stroke", d=> [5,61,211,231,254,277,278].includes(d.idVal) ? "#FF0000" : "#000000")
       .transition(trans)
         .attr("display", d=> (year-d.year >5) ? "none" : "block")
         .attr("stroke-dashoffset", d=>{
           let offsetYear = year - d.year;
-          if (offsetYear > 5 || year == d.year) {return 0} 
+          if (offsetYear > 5 || year == d.year) {return 0}
           return getLen(d)*offsetYear*0.2;
         })
         .attr("stroke-width", 2*1/realScale)
@@ -201,12 +202,12 @@ class WorldMap extends Component {
   }
 
   //--------------------
-  // UTILITY METHODS   | 
+  // UTILITY METHODS   |
   //--------------------
 
   //----------------------------------------------------------------------------
   getProjection() {
-    var jMap = $(".map");   
+    var jMap = $(".map");
     const offset = [jMap.width()/2, jMap.height()/2 ];
     const projection = d3.geoEquirectangular()
       .translate( offset )
@@ -228,7 +229,17 @@ class WorldMap extends Component {
         .attr("stop-color", "rgba(0,0,0,1)");
     radialGradient.append("stop")
         .attr("offset", "20%")
-        .attr("stop-color", "rgba(0,0,0,0.025)"); 
+        .attr("stop-color", "rgba(0,0,0,0.025)");
+
+    let specialRadialGradient = defs.append("radialGradient")
+        .attr("id", "special-radial-gradient");
+
+    specialRadialGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "rgba(255,0,0,1)");
+    specialRadialGradient.append("stop")
+        .attr("offset", "20%")
+        .attr("stop-color", "rgba(255,0,0,0.025)");
   }
 
 }

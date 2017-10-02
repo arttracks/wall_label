@@ -11,7 +11,6 @@ export default function(props) {
     <section className={props.side}>
 
     <div className="content">
-      {props.side}
       <Dashboard
         objectData={props.work}
         key={props.resetKey}

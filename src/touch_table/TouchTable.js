@@ -15,6 +15,7 @@ import WorldMap    from "./WorldMap.js"
 //------------------------
 import './TouchTable.css';
 import data from "../data/table_data.json"
+import seven_img from "../assets/seven.png"
 const pathToOverlays = require.context('../assets/overlays', true);
 
 //------------------------------------------------------------------------------
@@ -69,8 +70,9 @@ class TouchTable extends Component {
           </div>
 
           <div className="replay_notice" style={{opacity: (yearsRemaining <= 0 ? 1 : 0)}}>
+            <img className="seven_images" src={seven_img}/>
             <p>These 7 pictures were once in the famous Northbrook collection.</p>
-            <p className='smaller'>Touch below to see how paintings moved in and out of this collection.</p>
+            <p className='smaller'>Touch below to see how hundreds of paintings moved in and out of that collection.</p>
           </div>
           
         </div>
@@ -97,7 +99,7 @@ class TouchTable extends Component {
               expansion={ {start: 1750, end: 1930, ratio:1.8, label: "The Northbrook Era" } }/>
 
             <Button
-              text="Restart"
+              text={this.state.currentYear >= 2016 ? "Start Map" : "Restart Map"}
               cta="Touch Here."
               size="half"
               action={() => {this.counter.reset.call(this.counter)}}

@@ -4,7 +4,7 @@ require "geo_deluge"
 
 # Get the locations from the first spreadsheet, and put them into a cache
 lookup = GeoDeluge::Lookup.new(cache_file: "./fast_cache.json")
-locations = CSV.read("csvs/northbrook locations.csv")
+locations = CSV.read("csvs/northbrook locations2.csv")
 locations.shift
 name_lookup = {}
 locations.each_with_index do |l,i| 
@@ -16,6 +16,35 @@ end
 
 missing_locations = []
 paintings = []
+
+
+current_line = nil
+extra_data = {}
+File.foreach("csvs/extra_data.txt") do |line| 
+  
+  # Detect new lines
+  if line.include? ":"
+    current_line = line.split(":").first 
+    extra_data[current_line] = []
+    next
+  end
+
+  # Handle blank leading lines
+  next unless current_line
+
+  date, place = line.split(" - ")
+  next unless place
+  place.strip!
+  date = date.split("-").first
+
+  creation_place = name_lookup[place]
+  if creation_place.nil?
+    missing_locations << "could not find #{place}"
+    next
+  end
+
+  extra_data[current_line] << {year: date, lat: creation_place[:lat], lng: creation_place[:lng]}
+end
 
 row_counter = 0
 CSV.foreach("csvs/Northbrook painting locations.csv", headers: true) do |row|
