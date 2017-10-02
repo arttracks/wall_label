@@ -41,6 +41,15 @@ class WorldMap extends Component {
         .attr( 'class', 'land' )
         .attr( 'd', path );
 
+
+    g.append("text")
+      .attr("class", "london map-label")
+      .text( "London")
+
+    g.append("text")
+      .attr("class", "pgh map-label")
+      .text( "Pittsburgh")
+
     this.setState({
       d3Object: g,
       projection: projection
@@ -128,6 +137,20 @@ class WorldMap extends Component {
       yPos = endY
     }
 
+    let pghPos = [-79.995888,40.440624];
+    let londonPos  = [-0.146041,51.501122];
+    this.state.d3Object.select(".london")
+      .attr("x", projection(londonPos)[0]+15*(1/realScale))
+      .attr("y", projection(londonPos)[1]+4*(1/realScale))
+      .attr("transform", `rotate(-30,${projection(londonPos)[0]},${projection(londonPos)[1]})`)
+      .style("font-size", `${14*(1/realScale)}px`)
+
+    this.state.d3Object.select(".pgh")
+      .attr("x", projection(pghPos)[0]+15*(1/realScale))
+      .attr("y", projection(pghPos)[1]+4*(1/realScale))
+      .attr("transform", `rotate(-30,${projection(pghPos)[0]},${projection(pghPos)[1]})`)
+      .style("font-size", `${14*(1/realScale)}px`)
+
 
     // D3 for the little circles
     let eventIcons = this.state.d3Object.selectAll("g.event_icon").data(processedData, d=>d.idVal)
@@ -181,7 +204,7 @@ class WorldMap extends Component {
         .attr("display", d=> (year-d.year >5) ? "none" : "block")
         .attr("stroke-dashoffset", d=>{
           let offsetYear = year - d.year;
-          if (offsetYear > 5 || year == d.year) {return 0}
+          if (offsetYear > 5 || year === d.year) {return 0}
           return getLen(d)*offsetYear*0.2;
         })
         .attr("stroke-width", 2*1/realScale)
