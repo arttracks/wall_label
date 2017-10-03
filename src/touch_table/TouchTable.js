@@ -23,7 +23,7 @@ class TouchTable extends Component {
 
   constructor(props) {
       super(props);
-      this.state = {currentMoment: null, currentYear: 1500, overlay: "", overlayVisible: false};
+      this.state = {currentMoment: null, currentYear: data.startYear, overlay: "", overlayVisible: false};
 
       const yearCallback = year => {this.setState({currentYear: year})};
       this.counter = new YearCounter(data.startYear,.2,yearCallback);
@@ -62,7 +62,7 @@ class TouchTable extends Component {
       <div className="TouchTable" id="table">
 
         <div className="sidebar" >
-          
+
           <div  style={{opacity: finalOpacity, height: "100%"}}>
             <DateContext data={data.context} year={this.state.currentYear} offset={-50} delay="0.2" />
             <div className='current_date'>{this.state.currentYear}</div>
@@ -74,17 +74,17 @@ class TouchTable extends Component {
             <p>These 7 pictures were once in the famous Northbrook collection.</p>
             <p className='smaller'>Touch below to see how hundreds of paintings moved in and out of that collection.</p>
           </div>
-          
+
         </div>
 
-        <WorldMap 
+        <WorldMap
           startYear={data.startYear}
           currentYear={this.state.currentYear}
           />
-        
+
         <div className="controls">
           <div className="control_section" id="control_section">
-            
+
             <Timeline
               parentId="control_section"
               startYear={data.startYear}
