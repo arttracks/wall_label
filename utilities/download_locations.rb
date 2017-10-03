@@ -38,7 +38,10 @@ File.foreach("csvs/extra_data.txt") do |line|
   date = date.split("-").first
 
   creation_place = name_lookup[place]
-  if creation_place.nil?
+  if place == "unknown"
+    extra_data[current_line] << {year: date, lat: 0, lng: 0}
+    next
+  elsif creation_place.nil?
     missing_locations << "could not find #{place}"
     next
   end
@@ -47,7 +50,7 @@ File.foreach("csvs/extra_data.txt") do |line|
 end
 
 extra_data.each do |key, val| 
-  paintings << {id: key, events: val}
+  paintings << {id: key.to_i-1, events: val}
 end
 
 # row_counter = 0

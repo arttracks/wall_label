@@ -12,7 +12,7 @@ import * as topojson from "topojson";
 // Assets
 //------------------------
 import './WorldMap.css';
-import mapData from "../data/world_map.json"
+import mapData from "../data/world_map_30percent.json"
 import eventData from "../data/painting_events.json"
 
 
@@ -29,6 +29,7 @@ class WorldMap extends Component {
       .attr("height", "100%");
 
     this.addGradients(svg)
+
     const projection = this.getProjection();
     const path = d3.geoPath().projection(projection);
     const g = svg.append("g")
@@ -41,14 +42,13 @@ class WorldMap extends Component {
         .attr( 'class', 'land' )
         .attr( 'd', path );
 
-
     g.append("text")
       .attr("class", "london map-label")
-      .text( "London")
+      .text("London")
 
     g.append("text")
       .attr("class", "pgh map-label")
-      .text( "Pittsburgh")
+      .text("Pittsburgh")
 
     this.setState({
       d3Object: g,
@@ -56,9 +56,10 @@ class WorldMap extends Component {
     })
   }
 
-  // Prevent React from ever rendering this, since we're using D3 instead
+  // Prevent React from ever re-rendering this, since we're using D3 instead
   //----------------------------------------------------------------------------
   shouldComponentUpdate() {return false}
+
 
   // Build the data object, using the provided data and the current year
   //----------------------------------------------------------------------------
@@ -79,6 +80,10 @@ class WorldMap extends Component {
         year: e.events[lastValid].year,
         lastValid: lastValid
       }
+
+      // Handle Null Island events (at 0,0, aka unknown)
+      if (returnValue.lat === 0 && returnValue.lng === 0) {return null}
+
       if (lastValid > 0) {
         returnValue.prevLat = e.events[lastValid-1].lat
         returnValue.prevLng = e.events[lastValid-1].lng
@@ -111,7 +116,7 @@ class WorldMap extends Component {
     const trans = d3.transition().duration(200).ease(d3.easeLinear);
     const year = nextProps.currentYear;
 
-    // Helper function for computing length of the
+    // Helper function for computing distance between current and prev point
     function getLen(d) {
       let x2 = projection([d.prevLng,d.prevLat])[0]
       let y2 = projection([d.prevLng,d.prevLat])[1]
@@ -124,8 +129,8 @@ class WorldMap extends Component {
 
     // Calculate the current global x, y, and scale
     let realScale = maxScale;
-    let xPos = 0
-    let yPos = 0
+    let xPos = startX
+    let yPos = startY
     if (year > startYear && year <= endYear) {
      realScale = maxScale - (maxScale - minScale)/(endYear-startYear)*(year-startYear)
      xPos = startX - (startX - endX)/(endYear-startYear)*(year-startYear)
@@ -137,6 +142,7 @@ class WorldMap extends Component {
       yPos = endY
     }
 
+    // Move the locations to the correct point
     let pghPos = [-79.995888,40.440624];
     let londonPos  = [-0.146041,51.501122];
     this.state.d3Object.select(".london")
@@ -144,7 +150,6 @@ class WorldMap extends Component {
       .attr("y", projection(londonPos)[1]+4*(1/realScale))
       .attr("transform", `rotate(-30,${projection(londonPos)[0]},${projection(londonPos)[1]})`)
       .style("font-size", `${14*(1/realScale)}px`)
-
     this.state.d3Object.select(".pgh")
       .attr("x", projection(pghPos)[0]+15*(1/realScale))
       .attr("y", projection(pghPos)[1]+4*(1/realScale))
@@ -160,7 +165,7 @@ class WorldMap extends Component {
 
     // On enter, fro the circles
     let newIcons = eventIcons.enter()
-      .append("g").attr("class", "event_icon")
+      .append("g").attr("class","event_icon")
     newIcons.append("circle")
       .attr("class", "heatmap")
     newIcons.append("line")
@@ -169,6 +174,7 @@ class WorldMap extends Component {
     // On update, for the circles
     eventIcons = newIcons.merge(eventIcons)
       .attr("data-debug", d=>`${JSON.stringify(d)}`)
+      .attr("class", d=> [5,61,211,231,254,277,278].includes(+d.idVal) ? "event_icon cmoa" : "event_icon")
     eventIcons.select(".heatmap")
       .attr("cx", d=> {
         if (year-d.year >5)  {
@@ -189,8 +195,6 @@ class WorldMap extends Component {
         return -1000
       })
       .attr("r", 10*(1/realScale))
-      .style("fill", d=> [5,61,211,231,254,277,278].includes(d.idVal) ? "url(#special-radial-gradient)" : "url(#radial-gradient)")
-      .attr("z-index", d=> [5,61,211,231,254,277,278].includes(d.idVal) ? 1 : 0)
 
     // D3 for the lines
     eventIcons.select(".transitLine")
@@ -234,7 +238,7 @@ class WorldMap extends Component {
     const offset = [jMap.width()/2, jMap.height()/2 ];
     const projection = d3.geoEquirectangular()
       .translate( offset )
-      .scale( 2100 )
+      .scale( 2050 )
       .center([6.8578, 47.9762]);
 
     return projection;
@@ -255,14 +259,17 @@ class WorldMap extends Component {
         .attr("stop-color", "rgba(0,0,0,0.025)");
 
     let specialRadialGradient = defs.append("radialGradient")
-        .attr("id", "special-radial-gradient");
+        .attr("id", "cmoa-radial-gradient");
 
     specialRadialGradient.append("stop")
         .attr("offset", "0%")
         .attr("stop-color", "rgba(255,0,0,1)");
     specialRadialGradient.append("stop")
-        .attr("offset", "20%")
-        .attr("stop-color", "rgba(255,0,0,0.025)");
+        .attr("offset", "5%")
+        .attr("stop-color", "rgba(255,0,0,1)");
+    specialRadialGradient.append("stop")
+        .attr("offset", "40%")
+        .attr("stop-color", "rgba(255,0,0,0.05)");
   }
 
 }

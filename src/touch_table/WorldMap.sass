@@ -8,7 +8,7 @@ $CONTROL_OFFSET: 110px
   left: $SIDEBAR_WIDTH
   width: 1920px - $SIDEBAR_WIDTH
   height: $CONTENT_HEIGHT
-  background-color: #cfe7eb
+  background-color: #469fae //#cfe7eb
 
 .map-label
   font-size: 80%
@@ -17,14 +17,24 @@ $CONTROL_OFFSET: 110px
   fill: #d6ccc2
   stroke: #d6ccc2
 
+.heatmap
+  fill: url(#radial-gradient)
+  .transitLine
+    stroke: #000000
+.cmoa
+  .heatmap
+    fill: url(#cmoa-radial-gradient)
+    .transitLine
+      stroke: #FF0000
+
 .transitLine 
-  stroke: rgb(0,0,0)
   stroke-linecap: round
 
 .control_section .star.disabled
   .star_symbol
     opacity: 1
     fill: #c50000
+    font-size: 150%
   text
     fill: #000 
      
