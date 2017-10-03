@@ -36,6 +36,7 @@ class TouchTable extends Component {
   }
 
   componentDidMount() {
+    document.title = "Northbrook Table"
     this.counter.onStart();
   }
 
