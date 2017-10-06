@@ -75,7 +75,7 @@ class TouchTable extends Component {
 
           <div className="replay_notice" style={{opacity: (yearsRemaining <= 0 ? 1 : 0)}}>
             <img className="seven_images" src={seven_img}/>
-            <p>These 7 pictures were once in the famous Northbrook collection.</p>
+            <p>These 7 paintings were once in the famous Northbrook collection.</p>
             <p className='smaller'>Touch below to see how hundreds of paintings moved in and out of that collection.</p>
           </div>
 
