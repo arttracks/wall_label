@@ -54,8 +54,11 @@ class TouchTable extends Component {
           <img
             src={this.state.overlay}
             alt=""
-            onClick={()=> {this.setState({overlayVisible: false}); this.counter.unpause.call(this.counter)}}
           />
+          <div
+            className="overlayButton"
+            onClick={()=> {this.setState({overlayVisible: false}); this.counter.unpause.call(this.counter)}}
+          ></div>
       </div>
     )
 
