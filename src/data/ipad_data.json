@@ -10,7 +10,7 @@
       },
       {
         "owner": "Van Tol",
-        "year": 1650,
+        "year": 1750,
         "place": "Zoeterwoude, Netherlands",
         "distance": 28
       },
@@ -18,79 +18,79 @@
         "owner": "Mr. Delfos",
         "year": 1779,
         "place": "Amsterdam, Netherlands",
-        "distance": 28
+        "distance": 59
       },
       {
         "owner": "Barend Kooy",
         "year": 1802,
         "place": "Amsterdam, Netherlands",
-        "distance": 3
+        "distance": 59
       },
       {
         "owner": "Casparus Kopersmit",
         "year": 1820,
         "place": "Amsterdam, Netherlands",
-        "distance": 2
+        "distance": 59
       },
       {
         "owner": "Jan Andries Töpfer",
         "year": 1838,
         "place": "Amsterdam, Netherlands",
-        "distance": 2
+        "distance": 59
       },
       {
         "owner": "Tijssen",
         "year": 1841,
         "place": "Amsterdam, Netherlands",
-        "distance": 2
+        "distance": 59
       },
       {
         "owner": "Martin Colnaghi",
-        "year": 1850,
+        "year": 1865,
         "place": "London, England",
-        "distance": 350
+        "distance": 398
       },
       {
         "owner": "Thomas Baring, M. P.",
         "year": 1866,
         "place": "London, England",
-        "distance": 2
+        "distance": 398
       },
       {
         "owner": "Thomas George Baring",
         "year": 1873,
         "place": "London, England",
-        "distance": 0
+        "distance": 398
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
         "place": "London, England",
-        "distance": 0
+        "distance": 398
       },
       {
         "owner": "Duveen Brothers",
         "year": 1927,
         "place": "London, England",
-        "distance": 5
+        "distance": 398
       },
       {
-        "owner": "Mr. Alfred W. Erickson",
+        "owner": "Alfred W. Erickson",
         "year": 1929,
         "place": "New York, NY",
-        "distance": 3470
+        "distance": 3859
       },
       {
         "owner": "Anna Edith Erickson",
         "year": 1936,
         "place": "New York, NY",
-        "distance": 0
+        "distance": 3859
       },
       {
-        "owner": "Carnegie Institute",
+        "owner": "Department of Fine Arts, Carnegie Institute",
         "year": 1961,
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 4230
       }
     ],
     "moments": [
@@ -112,109 +112,77 @@
         "tagline": "How did this painting come to Pittsburgh?",
         "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
       }
-    ],
-    "artist": "Frans Hals",
-    "nationality": "Dutch",
-    "life_dates": "1581-1585–08/29/1666",
-    "title": "Pieter Cornelisz. van der Morsch",
-    "creation_date": "1616",
-    "medium": "oil on canvas, transferred from panel",
-    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
-    "accession_number": "61.42.2"
+    ]
   },
   {
     "startYear": 1788,
     "title": "Peters",
     "events": [
       {
-        "owner": "Frans Hals",
-        "year": 1616,
-        "place": "Haarlem, Netherlands",
+        "owner": " Alderman John Boydell",
+        "year": 1788,
+        "place": "London, England",
         "distance": 0
       },
       {
-        "owner": "Van Tol",
-        "year": 1650,
-        "place": "Zoeterwoude, Netherlands",
-        "distance": 28
+        "owner": "Sir Francis Baring",
+        "year": 1805,
+        "place": "Stratton Park, Hampshire, England",
+        "distance": 60
       },
       {
-        "owner": "Mr. Delfos",
-        "year": 1779,
-        "place": "Amsterdam, Netherlands",
-        "distance": 28
+        "owner": "Sir Thomas Baring",
+        "year": 1810,
+        "place": "Stratton Park, Hampshire, England",
+        "distance": 60
       },
       {
-        "owner": "Barend Kooy",
-        "year": 1802,
-        "place": "Amsterdam, Netherlands",
-        "distance": 3
-      },
-      {
-        "owner": "Casparus Kopersmit",
-        "year": 1820,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Jan Andries Töpfer",
-        "year": 1838,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Tijssen",
-        "year": 1841,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Martin Colnaghi",
-        "year": 1850,
-        "place": "London, England",
-        "distance": 350
-      },
-      {
-        "owner": "Thomas Baring, M. P.",
-        "year": 1866,
-        "place": "London, England",
-        "distance": 2
+        "owner": "Sir Francis Thornhill Baring",
+        "year": 1826,
+        "place": "Stratton Park, Hampshire, England",
+        "distance": 60
       },
       {
         "owner": "Thomas George Baring",
-        "year": 1873,
-        "place": "London, England",
-        "distance": 0
+        "year": 1866,
+        "place": "Stratton Park, Hampshire, England",
+        "distance": 60
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
-        "place": "London, England",
-        "distance": 0
+        "place": "Stratton Park, Hampshire, England",
+        "distance": 60
       },
       {
-        "owner": "Duveen Brothers",
-        "year": 1927,
-        "place": "London, England",
-        "distance": 5
+        "owner": "Arthur L. Nicholson",
+        "year": 1930,
+        "place": "Surrey, England",
+        "distance": 96
       },
       {
-        "owner": "Mr. Alfred W. Erickson",
-        "year": 1929,
+        "owner": "Arthur L. Nicholson",
+        "year": 1933,
         "place": "New York, NY",
-        "distance": 3470
+        "distance": 3543
       },
       {
-        "owner": "Anna Edith Erickson",
-        "year": 1936,
-        "place": "New York, NY",
-        "distance": 0
-      },
-      {
-        "owner": "Carnegie Institute",
-        "year": 1961,
+        "owner": "Mrs. Alexander C. Speyer",
+        "year": 1933,
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 3914
+      },
+      {
+        "owner": "Alexander C. Speyer, Jr., Darthea Speyer, and Nora Fromboluti",
+        "year": 1979,
+        "place": "Pittsburgh, PA",
+        "distance": 3914
+      },
+      {
+        "owner": "Carnegie Museum of Art",
+        "year": 2002,
+        "place": "Pittsburgh, PA",
+        "distance": 3914
       }
     ],
     "moments": [
@@ -243,94 +211,76 @@
     "title": "Reynolds",
     "events": [
       {
-        "owner": "Frans Hals",
-        "year": 1616,
-        "place": "Haarlem, Netherlands",
+        "owner": "Richard Edgcumbe",
+        "year": "c. 1759",
+        "place": "London, England",
         "distance": 0
       },
       {
-        "owner": "Van Tol",
-        "year": 1650,
-        "place": "Zoeterwoude, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Mr. Delfos",
-        "year": 1779,
-        "place": "Amsterdam, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Barend Kooy",
-        "year": 1802,
-        "place": "Amsterdam, Netherlands",
-        "distance": 3
-      },
-      {
-        "owner": "Casparus Kopersmit",
-        "year": 1820,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Jan Andries Töpfer",
-        "year": 1838,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Tijssen",
-        "year": 1841,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Martin Colnaghi",
-        "year": 1850,
+        "owner": "Anne Franks Day (Lady Anne Fenoulhet)",
+        "year": 1761,
         "place": "London, England",
-        "distance": 350
+        "distance": 0
+      },
+      {
+        "owner": "Anne Franks Day (Lady Anne Fenoulhet)",
+        "year": 1763,
+        "place": "Calais, France",
+        "distance": 116
+      },
+      {
+        "owner": "Sir Thomas Baring",
+        "year": 1845,
+        "place": "London, England",
+        "distance": 232
       },
       {
         "owner": "Thomas Baring, M. P.",
-        "year": 1866,
+        "year": 1848,
         "place": "London, England",
-        "distance": 2
+        "distance": 232
       },
       {
         "owner": "Thomas George Baring",
         "year": 1873,
         "place": "London, England",
-        "distance": 0
+        "distance": 232
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
         "place": "London, England",
-        "distance": 0
+        "distance": 232
       },
       {
-        "owner": "Duveen Brothers",
-        "year": 1927,
-        "place": "London, England",
-        "distance": 5
-      },
-      {
-        "owner": "Mr. Alfred W. Erickson",
+        "owner": "Florence Anita, Countess of Northbrook",
         "year": 1929,
-        "place": "New York, NY",
-        "distance": 3470
+        "place": "London, England",
+        "distance": 232
       },
       {
-        "owner": "Anna Edith Erickson",
-        "year": 1936,
-        "place": "New York, NY",
-        "distance": 0
+        "owner": "Markey",
+        "year": "02-1938",
+        "place": "London, England",
+        "distance": 232
       },
       {
-        "owner": "Carnegie Institute",
-        "year": 1961,
+        "owner": "Symons Galleries",
+        "year": "04-1938",
+        "place": "New York, NY",
+        "distance": 3693
+      },
+      {
+        "owner": "Charles J. Rosenbloom",
+        "year": 1946,
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 4064
+      },
+      {
+        "owner": "Museum of Art, Carnegie Institute",
+        "year": 1974,
+        "place": "Pittsburgh, PA",
+        "distance": 4064
       }
     ],
     "moments": [
@@ -348,7 +298,7 @@
       },
       {
         "year": 1937,
-        "yearText": "New York, 1937",
+        "yearText": "London, 1937",
         "tagline": "When and how the painting came to Pittsburgh",
         "story": "Long after it was damaged by fire, the painting reappeared in public at a Christie’s sale in London in June 1937, as the property of Florence Anita, Countess of Northbrook. She was the widow of the 2nd Earl of Northbrook, who had died in 1929. The portrait did not sell, so it reappeared in February of the following year at the same venue, when it did sell for the low price of £115.5, undoubtedly because of its poor condition. That same year, it appeared in the New York art market. By 1946, it belonged to the Pittsburgh art collector Charles J. Rosenbloom, who, upon his death in 1973, bequeathed it to the museum, along with a large part of his great print collection.\nThis is the portrait’s first display in Pittsburgh since 1946 and it marks the completion of a major restoration to recover Reynold’s original effect."
       }
@@ -359,94 +309,94 @@
     "title": "Dughet",
     "events": [
       {
-        "owner": "Frans Hals",
-        "year": 1616,
-        "place": "Haarlem, Netherlands",
+        "owner": " Gaspard Dughet",
+        "year": 1671,
+        "place": "Rome, Italy",
         "distance": 0
       },
       {
-        "owner": "Van Tol",
-        "year": 1650,
-        "place": "Zoeterwoude, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Mr. Delfos",
-        "year": 1779,
-        "place": "Amsterdam, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Barend Kooy",
-        "year": 1802,
-        "place": "Amsterdam, Netherlands",
-        "distance": 3
-      },
-      {
-        "owner": "Casparus Kopersmit",
-        "year": 1820,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Jan Andries Töpfer",
-        "year": 1838,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Tijssen",
-        "year": 1841,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Martin Colnaghi",
-        "year": 1850,
+        "owner": "William Harris",
+        "year": 1810,
         "place": "London, England",
-        "distance": 350
+        "distance": 891
+      },
+      {
+        "owner": " Sir Henry Charles Englefield",
+        "year": 1811,
+        "place": "London, England",
+        "distance": 891
+      },
+      {
+        "owner": "Mr. Norton",
+        "year": 1823,
+        "place": "London, England",
+        "distance": 891
+      },
+      {
+        "owner": " Colonel Hugh Duncan Baillie",
+        "year": 1824,
+        "place": "London, England",
+        "distance": 891
+      },
+      {
+        "owner": " Mr. Farrer",
+        "year": 1849,
+        "place": "London, England",
+        "distance": 891
       },
       {
         "owner": "Thomas Baring, M. P.",
-        "year": 1866,
+        "year": 1849,
         "place": "London, England",
-        "distance": 2
+        "distance": 891
       },
       {
         "owner": "Thomas George Baring",
         "year": 1873,
         "place": "London, England",
-        "distance": 0
+        "distance": 891
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
         "place": "London, England",
-        "distance": 0
+        "distance": 891
       },
       {
-        "owner": "Duveen Brothers",
-        "year": 1927,
-        "place": "London, England",
-        "distance": 5
-      },
-      {
-        "owner": "Mr. Alfred W. Erickson",
+        "owner": "Florence Anita, Countess of Northbrook",
         "year": 1929,
-        "place": "New York, NY",
-        "distance": 3470
+        "place": "London, England",
+        "distance": 891
       },
       {
-        "owner": "Anna Edith Erickson",
-        "year": 1936,
-        "place": "New York, NY",
-        "distance": 0
+        "owner": "Sneyd",
+        "year": 1937,
+        "place": "London, England",
+        "distance": 891
       },
       {
-        "owner": "Carnegie Institute",
-        "year": 1961,
+        "owner": "Smith",
+        "year": 1938,
+        "place": "London, England",
+        "distance": 891
+      },
+      {
+        "owner": "Howard A. Noble",
+        "year": 1939,
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 4606
+      },
+      {
+        "owner": "Estate of Howard A. Noble",
+        "year": 1964,
+        "place": "Pittsburgh, PA",
+        "distance": 4606
+      },
+      {
+        "owner": "Museum of Art, Carnegie Institute",
+        "year": 1966,
+        "place": "Pittsburgh, PA",
+        "distance": 4606
       }
     ],
     "moments": [
@@ -454,11 +404,11 @@
         "year": 1670,
         "yearText": "Rome, c. 1670",
         "tagline": "What is “Classical Landscape”?",
-        "story": "Classical landscape, which presented an idealized form of nature, was a product of the 17th century. It strove for balance, simplicity, and harmonious presentation of elements of nature to achieve an ideal pastoral beauty rather than an exact representation of a specific place. The form was developed to a high degree by Nicolas Poussin and Claude Lorrain, French artists working mainly in Rome, a multi-national artistic center at the time.\nRoman-born Gaspard Dughet, the son of a French cook and his Italian wife, painted this landscape late in his career. Dughet was a student of Nicolas Poussin, who was also his brother-in-law. Because of this, Gaspard Dughet was often called Gaspard Poussin. Dughet’s landscapes are usually more animated versions of Poussin’s classical images.\nIn the 18th century, Dughet, along with Poussin and Lorrain, became particularly popular with British collectors and influential models for British landscape painters. A reason for their popularity was undoubtedly the Grand Tour: the leisurely journeys to the Continent, with emphasis on France and Italy, which became the educational rite of passage for privileged, wealthy members of the British upper class."
+        "story": "Classical landscape, which presented an idealized form of nature, was a product of the 17th century. It strove for balance, simplicity, and harmonious presentation of elements of nature to achieve an ideal pastoral beauty rather than an exact representation of a specific place. The form was developed to a high degree by Nicolas Poussin and Claude Lorrain, French artists working mainly in Rome, a multi-national artistic center at the time.\nRoman-born Gaspard Dughet, the son of a French cook and his Italian wife, painted this landscape late in his career. Dughet was a student of Nicolas Poussin, who was also his brother-in-law. Because of this, Gaspard Dughet was often called Gaspard Poussin. Dughet’s landscapes are usually more animated versions of Poussin’s classical images.\nDughet, along with Poussin and Lorrain, became particularly popular with 18th century British collectors and influential models for British landscape painters. Their popularity was undoubtedly due to the Grand Tour: the leisurely journeys to the Continent, which became the educational rite of passage for privileged, wealthy members of the British upper class."
       },
       {
         "year": 1929,
-        "yearText": "New York, 1929",
+        "yearText": "London, 1849",
         "tagline": "The painting’s life in England",
         "story": "This landscape is first documented as being in England at the beginning of the 19th century, but it was not until 1849 that it was purchased by Thomas Baring, M. P. It was one of several works by Dughet in his collection. German art historian Gustav Waagen, who saw the painting in Mr. Baring’s London residence, wrote about it in his account published in 1854: <i>A picture of great charm both in point of poetic composition and transparent colouring.</i>\nShortly before his death, Mr. Baring lent the painting to the 1872 annual exhibition at the Royal Academy in London. As with the other art in Mr. Baring’s collection, this painting was bequeathed to his nephew Thomas George Baring, subsequently 1st Earl of Northbrook. It remained in the Northbrook Collection until sold at auction in 1938."
       },
@@ -475,99 +425,69 @@
     "title": "Laughing Boy",
     "events": [
       {
-        "owner": "Frans Hals",
-        "year": 1616,
-        "place": "Haarlem, Netherlands",
+        "owner": "unknown Northern Italian",
+        "year": 1700,
+        "place": "Northern Italy",
         "distance": 0
       },
       {
-        "owner": "Van Tol",
-        "year": 1650,
-        "place": "Zoeterwoude, Netherlands",
-        "distance": 28
+        "owner": "Lebrun",
+        "year": 1808,
+        "place": "Paris, France",
+        "distance": 398
       },
       {
-        "owner": "Mr. Delfos",
-        "year": 1779,
-        "place": "Amsterdam, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Barend Kooy",
-        "year": 1802,
-        "place": "Amsterdam, Netherlands",
-        "distance": 3
-      },
-      {
-        "owner": "Casparus Kopersmit",
-        "year": 1820,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Jan Andries Töpfer",
-        "year": 1838,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Tijssen",
-        "year": 1841,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Martin Colnaghi",
-        "year": 1850,
+        "owner": "Sir Thomas Baring",
+        "year": 1836,
         "place": "London, England",
-        "distance": 350
+        "distance": 817
+      },
+      {
+        "owner": "William Coningham",
+        "year": 1843,
+        "place": "London, England",
+        "distance": 817
       },
       {
         "owner": "Thomas Baring, M. P.",
-        "year": 1866,
+        "year": 1849,
         "place": "London, England",
-        "distance": 2
+        "distance": 817
       },
       {
         "owner": "Thomas George Baring",
         "year": 1873,
         "place": "London, England",
-        "distance": 0
+        "distance": 817
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
         "place": "London, England",
-        "distance": 0
+        "distance": 817
       },
       {
-        "owner": "Duveen Brothers",
-        "year": 1927,
-        "place": "London, England",
-        "distance": 5
-      },
-      {
-        "owner": "Mr. Alfred W. Erickson",
-        "year": 1929,
+        "owner": "John Levy Galleries",
+        "year": "11-1920",
         "place": "New York, NY",
-        "distance": 3470
+        "distance": 4278
       },
       {
-        "owner": "Anna Edith Erickson",
-        "year": 1936,
-        "place": "New York, NY",
-        "distance": 0
-      },
-      {
-        "owner": "Carnegie Institute",
-        "year": 1961,
+        "owner": " Mrs. J. Willis Dalzell",
+        "year": "12-1920",
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 4649
+      },
+      {
+        "owner": "Department of Fine Arts, Carnegie Institute",
+        "year": 1929,
+        "place": "Pittsburgh, PA",
+        "distance": 4649
       }
     ],
     "moments": [
       {
-        "year": 1620,
+        "year": 1837,
         "yearText": "London, 1837",
         "tagline": "What are “Genre Paintings”?",
         "story": "This unusual painting was listed as a work of the Spanish master Murillo when Sir Thomas Baring lent it to the British Institution’s 1837 exhibition. Indeed, during the many years it spent in the Baring and Northbrook collections, the painting maintained the same attribution. It was still listed as by Murillo in 1896, when the 1st Earl of Northbrook compiled a list of art works designated as “heirlooms.” Though the painting has similarities to Murillo’s paintings of urchins (mischievous children, poorly or raggedly dressed) the attribution is no longer accepted. An example of genre painting, meaning a work depicting a scene of everyday life, the painting is more likely a work of the Northern Italian School, which also produced such works as early as the last part of the 16th century."
@@ -591,94 +511,52 @@
     "title": "Ysenbrandt",
     "events": [
       {
-        "owner": "Frans Hals",
-        "year": 1616,
-        "place": "Haarlem, Netherlands",
+        "owner": "Adrien Ysenbrandt",
+        "year": 1535,
+        "place": "Bruges, Belgium",
         "distance": 0
       },
       {
-        "owner": "Van Tol",
-        "year": 1650,
-        "place": "Zoeterwoude, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Mr. Delfos",
-        "year": 1779,
-        "place": "Amsterdam, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Barend Kooy",
-        "year": 1802,
-        "place": "Amsterdam, Netherlands",
-        "distance": 3
-      },
-      {
-        "owner": "Casparus Kopersmit",
-        "year": 1820,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Jan Andries Töpfer",
-        "year": 1838,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Tijssen",
-        "year": 1841,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Martin Colnaghi",
-        "year": 1850,
+        "owner": "M. Nieuwenhuys",
+        "year": 1856,
         "place": "London, England",
-        "distance": 350
+        "distance": 180
       },
       {
         "owner": "Thomas Baring, M. P.",
-        "year": 1866,
+        "year": 1856,
         "place": "London, England",
-        "distance": 2
+        "distance": 180
       },
       {
         "owner": "Thomas George Baring",
         "year": 1873,
         "place": "London, England",
-        "distance": 0
+        "distance": 180
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
         "place": "London, England",
-        "distance": 0
+        "distance": 180
       },
       {
-        "owner": "Duveen Brothers",
-        "year": 1927,
-        "place": "London, England",
-        "distance": 5
-      },
-      {
-        "owner": "Mr. Alfred W. Erickson",
+        "owner": "Julius Böhler",
         "year": 1929,
-        "place": "New York, NY",
-        "distance": 3470
+        "place": "Munich, Germany",
+        "distance": 887
       },
       {
-        "owner": "Anna Edith Erickson",
-        "year": 1936,
-        "place": "New York, NY",
-        "distance": 0
-      },
-      {
-        "owner": "Carnegie Institute",
-        "year": 1961,
+        "owner": "Howard A. Noble",
+        "year": 1944,
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 5171
+      },
+      {
+        "owner": "Museum of Art, Carnegie Institute",
+        "year": 1964,
+        "place": "Pittsburgh, PA",
+        "distance": 5171
       }
     ],
     "moments": [
@@ -702,106 +580,70 @@
       }
     ]
   },
-   {
+  {
     "startYear": 1525,
     "title": "Puligo",
     "events": [
       {
-        "owner": "Frans Hals",
-        "year": 1616,
-        "place": "Haarlem, Netherlands",
+        "owner": "Domenico Puligo",
+        "year": 1620,
+        "place": "Florence, Italy",
         "distance": 0
       },
       {
-        "owner": "Van Tol",
-        "year": 1650,
-        "place": "Zoeterwoude, Netherlands",
-        "distance": 28
+        "owner": "Jean-Baptiste-Pierre Lebrun",
+        "year": 1809,
+        "place": "Paris, France",
+        "distance": 551
       },
       {
-        "owner": "Mr. Delfos",
-        "year": 1779,
-        "place": "Amsterdam, Netherlands",
-        "distance": 28
-      },
-      {
-        "owner": "Barend Kooy",
-        "year": 1802,
-        "place": "Amsterdam, Netherlands",
-        "distance": 3
-      },
-      {
-        "owner": "Casparus Kopersmit",
-        "year": 1820,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Jan Andries Töpfer",
-        "year": 1838,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Tijssen",
-        "year": 1841,
-        "place": "Amsterdam, Netherlands",
-        "distance": 2
-      },
-      {
-        "owner": "Martin Colnaghi",
-        "year": 1850,
+        "owner": "Sir Thomas Baring",
+        "year": 1824,
         "place": "London, England",
-        "distance": 350
+        "distance": 765
       },
       {
         "owner": "Thomas Baring, M. P.",
-        "year": 1866,
+        "year": 1848,
         "place": "London, England",
-        "distance": 2
+        "distance": 765
       },
       {
         "owner": "Thomas George Baring",
         "year": 1873,
         "place": "London, England",
-        "distance": 0
+        "distance": 765
       },
       {
         "owner": "Francis George Baring",
         "year": 1904,
         "place": "London, England",
-        "distance": 0
+        "distance": 765
       },
       {
-        "owner": "Duveen Brothers",
-        "year": 1927,
-        "place": "London, England",
-        "distance": 5
-      },
-      {
-        "owner": "Mr. Alfred W. Erickson",
-        "year": 1929,
+        "owner": "Lilienfeld Galleries",
+        "year": 1934,
         "place": "New York, NY",
-        "distance": 3470
+        "distance": 4224
       },
       {
-        "owner": "Anna Edith Erickson",
-        "year": 1936,
-        "place": "New York, NY",
-        "distance": 0
-      },
-      {
-        "owner": "Carnegie Institute",
-        "year": 1961,
+        "owner": "Howard A. Noble",
+        "year": 1939,
         "place": "Pittsburgh, PA",
-        "distance": 371
+        "distance": 4595
+      },
+      {
+        "owner": "Museum of Art, Carnegie Institute",
+        "year": 1964,
+        "place": "Pittsburgh, PA",
+        "distance": 4595
       }
     ],
     "moments": [
       {
         "year": 1520,
         "yearText": "Florence, c. 1520",
-        "tagline": "What do we know - and don’t know?",
+        "tagline": "What we know - and don't know - about this portrait",
         "story": "By the early 16th century, portraiture had become a widely-practiced art form in Florence - where this portrait was painted - and in other parts of Europe. In the quest for social status and worldly immortality, members of the aristocracy and other elite members of society turned increasingly to commissioning portraits of themselves and their families.\nThat desire for legacy is ironic in the case of this portrait, since the identities of both the young man and the artist are lost to history. Because the portrait was once in the Medici collection in Florence, the young man has been reported to be a member of that family. But his identity remains unknown. And, based on style and composition, the portrait could be the work of any one of several well-known Florentine artists of this period. Attribution to Domenico Puligo originated with noted American art historian Bernard Berenson."
       },
       {

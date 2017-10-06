@@ -18,7 +18,7 @@ export default function(props) {
     <dl>
       <dt>Current Owner:</dt><dd>{event.owner}</dd>
       <dt>Current Location:</dt><dd>{event.place}</dd>
-      <dt>Miles Travelled:</dt><dd>{distance} miles</dd>
+      <dt>Miles Travelled:</dt><dd>{event.distance} miles</dd>
       <dt>Number of Owners:</dt><dd>{numToWords(i)}</dd>
     </dl>
   )
