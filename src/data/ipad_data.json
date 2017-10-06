@@ -123,6 +123,744 @@
     "accession_number": "61.42.2"
   },
   {
+    "startYear": 1616,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "Haarlem, 1616",
+        "tagline": "Who is this man and why is he holding a herring?",
+        "story": "This portrait by the great 17th century Dutch artist Frans Hals depicts Pieter Cornelisz. van der Morsch, municipal beadle (court officer) of Leiden and a member of the Rederijkerskamer (Chamber of Rhetoric), the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit.\nHals’s style of visible brushstrokes (as in the hands here) differed from prevailing norms in Dutch painting and caused considerable controversy in his lifetime. Though he was a very successful artist, it was not until the 19th century, especially because of the Impressionist movement, that his mastery was widely recognized."
+      },
+      {
+        "year": 1929,
+        "yearText": "New York, 1929",
+        "tagline": "How did this painting come to America?",
+        "story": "When the British art dealer Sir Joseph Duveen purchased this portrait from Lord Northbrook in 1927 it was still on its original panel support, though it was split in several places. A prospective wealthy American buyer, the advertising pioneer Alfred W. Erickson, offered to purchase the painting for $220,000, but only if it was transferred to canvas support to his satisfaction. This difficult conservation process (shaving successive wood layers and attaching the resulting thin paint layer to a specially-prepared canvas) was usually done to stop or prevent harm to the painted surface from a damaged panel. Though used extensively, especially in the 19th century, it has since been largely supplanted by other, less severe conservation methods. In early 1929, the transfer to canvas having been successfully completed, Mr. Erickson purchased the painting."
+      },
+      {
+        "year": 1961,
+        "yearText": "New York, 1961",
+        "tagline": "How did this painting come to Pittsburgh?",
+        "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
+      }
+    ],
+    "artist": "Frans Hals",
+    "nationality": "Dutch",
+    "life_dates": "1581-1585–08/29/1666",
+    "title": "Pieter Cornelisz. van der Morsch",
+    "creation_date": "1616",
+    "medium": "oil on canvas, transferred from panel",
+    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
+    "accession_number": "61.42.2"
+  },
+  {
+    "startYear": 1616,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "Haarlem, 1616",
+        "tagline": "Who is this man and why is he holding a herring?",
+        "story": "This portrait by the great 17th century Dutch artist Frans Hals depicts Pieter Cornelisz. van der Morsch, municipal beadle (court officer) of Leiden and a member of the Rederijkerskamer (Chamber of Rhetoric), the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit.\nHals’s style of visible brushstrokes (as in the hands here) differed from prevailing norms in Dutch painting and caused considerable controversy in his lifetime. Though he was a very successful artist, it was not until the 19th century, especially because of the Impressionist movement, that his mastery was widely recognized."
+      },
+      {
+        "year": 1929,
+        "yearText": "New York, 1929",
+        "tagline": "How did this painting come to America?",
+        "story": "When the British art dealer Sir Joseph Duveen purchased this portrait from Lord Northbrook in 1927 it was still on its original panel support, though it was split in several places. A prospective wealthy American buyer, the advertising pioneer Alfred W. Erickson, offered to purchase the painting for $220,000, but only if it was transferred to canvas support to his satisfaction. This difficult conservation process (shaving successive wood layers and attaching the resulting thin paint layer to a specially-prepared canvas) was usually done to stop or prevent harm to the painted surface from a damaged panel. Though used extensively, especially in the 19th century, it has since been largely supplanted by other, less severe conservation methods. In early 1929, the transfer to canvas having been successfully completed, Mr. Erickson purchased the painting."
+      },
+      {
+        "year": 1961,
+        "yearText": "New York, 1961",
+        "tagline": "How did this painting come to Pittsburgh?",
+        "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
+      }
+    ],
+    "artist": "Frans Hals",
+    "nationality": "Dutch",
+    "life_dates": "1581-1585–08/29/1666",
+    "title": "Pieter Cornelisz. van der Morsch",
+    "creation_date": "1616",
+    "medium": "oil on canvas, transferred from panel",
+    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
+    "accession_number": "61.42.2"
+  },
+  {
+    "startYear": 1616,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "Haarlem, 1616",
+        "tagline": "Who is this man and why is he holding a herring?",
+        "story": "This portrait by the great 17th century Dutch artist Frans Hals depicts Pieter Cornelisz. van der Morsch, municipal beadle (court officer) of Leiden and a member of the Rederijkerskamer (Chamber of Rhetoric), the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit.\nHals’s style of visible brushstrokes (as in the hands here) differed from prevailing norms in Dutch painting and caused considerable controversy in his lifetime. Though he was a very successful artist, it was not until the 19th century, especially because of the Impressionist movement, that his mastery was widely recognized."
+      },
+      {
+        "year": 1929,
+        "yearText": "New York, 1929",
+        "tagline": "How did this painting come to America?",
+        "story": "When the British art dealer Sir Joseph Duveen purchased this portrait from Lord Northbrook in 1927 it was still on its original panel support, though it was split in several places. A prospective wealthy American buyer, the advertising pioneer Alfred W. Erickson, offered to purchase the painting for $220,000, but only if it was transferred to canvas support to his satisfaction. This difficult conservation process (shaving successive wood layers and attaching the resulting thin paint layer to a specially-prepared canvas) was usually done to stop or prevent harm to the painted surface from a damaged panel. Though used extensively, especially in the 19th century, it has since been largely supplanted by other, less severe conservation methods. In early 1929, the transfer to canvas having been successfully completed, Mr. Erickson purchased the painting."
+      },
+      {
+        "year": 1961,
+        "yearText": "New York, 1961",
+        "tagline": "How did this painting come to Pittsburgh?",
+        "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
+      }
+    ],
+    "artist": "Frans Hals",
+    "nationality": "Dutch",
+    "life_dates": "1581-1585–08/29/1666",
+    "title": "Pieter Cornelisz. van der Morsch",
+    "creation_date": "1616",
+    "medium": "oil on canvas, transferred from panel",
+    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
+    "accession_number": "61.42.2"
+  },
+  {
+    "startYear": 1616,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "Haarlem, 1616",
+        "tagline": "Who is this man and why is he holding a herring?",
+        "story": "This portrait by the great 17th century Dutch artist Frans Hals depicts Pieter Cornelisz. van der Morsch, municipal beadle (court officer) of Leiden and a member of the Rederijkerskamer (Chamber of Rhetoric), the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit.\nHals’s style of visible brushstrokes (as in the hands here) differed from prevailing norms in Dutch painting and caused considerable controversy in his lifetime. Though he was a very successful artist, it was not until the 19th century, especially because of the Impressionist movement, that his mastery was widely recognized."
+      },
+      {
+        "year": 1929,
+        "yearText": "New York, 1929",
+        "tagline": "How did this painting come to America?",
+        "story": "When the British art dealer Sir Joseph Duveen purchased this portrait from Lord Northbrook in 1927 it was still on its original panel support, though it was split in several places. A prospective wealthy American buyer, the advertising pioneer Alfred W. Erickson, offered to purchase the painting for $220,000, but only if it was transferred to canvas support to his satisfaction. This difficult conservation process (shaving successive wood layers and attaching the resulting thin paint layer to a specially-prepared canvas) was usually done to stop or prevent harm to the painted surface from a damaged panel. Though used extensively, especially in the 19th century, it has since been largely supplanted by other, less severe conservation methods. In early 1929, the transfer to canvas having been successfully completed, Mr. Erickson purchased the painting."
+      },
+      {
+        "year": 1961,
+        "yearText": "New York, 1961",
+        "tagline": "How did this painting come to Pittsburgh?",
+        "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
+      }
+    ],
+    "artist": "Frans Hals",
+    "nationality": "Dutch",
+    "life_dates": "1581-1585–08/29/1666",
+    "title": "Pieter Cornelisz. van der Morsch",
+    "creation_date": "1616",
+    "medium": "oil on canvas, transferred from panel",
+    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
+    "accession_number": "61.42.2"
+  },
+  {
+    "startYear": 1616,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "Haarlem, 1616",
+        "tagline": "Who is this man and why is he holding a herring?",
+        "story": "This portrait by the great 17th century Dutch artist Frans Hals depicts Pieter Cornelisz. van der Morsch, municipal beadle (court officer) of Leiden and a member of the Rederijkerskamer (Chamber of Rhetoric), the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit.\nHals’s style of visible brushstrokes (as in the hands here) differed from prevailing norms in Dutch painting and caused considerable controversy in his lifetime. Though he was a very successful artist, it was not until the 19th century, especially because of the Impressionist movement, that his mastery was widely recognized."
+      },
+      {
+        "year": 1929,
+        "yearText": "New York, 1929",
+        "tagline": "How did this painting come to America?",
+        "story": "When the British art dealer Sir Joseph Duveen purchased this portrait from Lord Northbrook in 1927 it was still on its original panel support, though it was split in several places. A prospective wealthy American buyer, the advertising pioneer Alfred W. Erickson, offered to purchase the painting for $220,000, but only if it was transferred to canvas support to his satisfaction. This difficult conservation process (shaving successive wood layers and attaching the resulting thin paint layer to a specially-prepared canvas) was usually done to stop or prevent harm to the painted surface from a damaged panel. Though used extensively, especially in the 19th century, it has since been largely supplanted by other, less severe conservation methods. In early 1929, the transfer to canvas having been successfully completed, Mr. Erickson purchased the painting."
+      },
+      {
+        "year": 1961,
+        "yearText": "New York, 1961",
+        "tagline": "How did this painting come to Pittsburgh?",
+        "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
+      }
+    ],
+    "artist": "Frans Hals",
+    "nationality": "Dutch",
+    "life_dates": "1581-1585–08/29/1666",
+    "title": "Pieter Cornelisz. van der Morsch",
+    "creation_date": "1616",
+    "medium": "oil on canvas, transferred from panel",
+    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
+    "accession_number": "61.42.2"
+  },
+  {
+    "startYear": 1616,
+    "events": [
+      {
+        "owner": "Frans Hals",
+        "year": 1616,
+        "place": "Haarlem, Netherlands",
+        "distance": 0
+      },
+      {
+        "owner": "Van Tol",
+        "year": 1650,
+        "place": "Zoeterwoude, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Mr. Delfos",
+        "year": 1779,
+        "place": "Amsterdam, Netherlands",
+        "distance": 28
+      },
+      {
+        "owner": "Barend Kooy",
+        "year": 1802,
+        "place": "Amsterdam, Netherlands",
+        "distance": 3
+      },
+      {
+        "owner": "Casparus Kopersmit",
+        "year": 1820,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Jan Andries Töpfer",
+        "year": 1838,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Tijssen",
+        "year": 1841,
+        "place": "Amsterdam, Netherlands",
+        "distance": 2
+      },
+      {
+        "owner": "Martin Colnaghi",
+        "year": 1850,
+        "place": "London, England",
+        "distance": 350
+      },
+      {
+        "owner": "Thomas Baring, M. P.",
+        "year": 1866,
+        "place": "London, England",
+        "distance": 2
+      },
+      {
+        "owner": "Thomas George Baring",
+        "year": 1873,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Francis George Baring",
+        "year": 1904,
+        "place": "London, England",
+        "distance": 0
+      },
+      {
+        "owner": "Duveen Brothers",
+        "year": 1927,
+        "place": "London, England",
+        "distance": 5
+      },
+      {
+        "owner": "Mr. Alfred W. Erickson",
+        "year": 1929,
+        "place": "New York, NY",
+        "distance": 3470
+      },
+      {
+        "owner": "Anna Edith Erickson",
+        "year": 1936,
+        "place": "New York, NY",
+        "distance": 0
+      },
+      {
+        "owner": "Carnegie Institute",
+        "year": 1961,
+        "place": "Pittsburgh, PA",
+        "distance": 371
+      }
+    ],
+    "moments": [
+      {
+        "year": 1620,
+        "yearText": "Haarlem, 1616",
+        "tagline": "Who is this man and why is he holding a herring?",
+        "story": "This portrait by the great 17th century Dutch artist Frans Hals depicts Pieter Cornelisz. van der Morsch, municipal beadle (court officer) of Leiden and a member of the Rederijkerskamer (Chamber of Rhetoric), the city’s amateur literary club. Details in the painting refer to van der Morsch's role in the club, which composed poetry and staged satirical plays. The dried herring he holds refers to the phrase “to give a red herring,” Dutch slang for rebuking someone with sarcastic remarks. The animated pose and expression convey van der Morsch’s lively character, while the slogan at the upper left, Wie begeert (“Who wants it?”), suggests his wit.\nHals’s style of visible brushstrokes (as in the hands here) differed from prevailing norms in Dutch painting and caused considerable controversy in his lifetime. Though he was a very successful artist, it was not until the 19th century, especially because of the Impressionist movement, that his mastery was widely recognized."
+      },
+      {
+        "year": 1929,
+        "yearText": "New York, 1929",
+        "tagline": "How did this painting come to America?",
+        "story": "When the British art dealer Sir Joseph Duveen purchased this portrait from Lord Northbrook in 1927 it was still on its original panel support, though it was split in several places. A prospective wealthy American buyer, the advertising pioneer Alfred W. Erickson, offered to purchase the painting for $220,000, but only if it was transferred to canvas support to his satisfaction. This difficult conservation process (shaving successive wood layers and attaching the resulting thin paint layer to a specially-prepared canvas) was usually done to stop or prevent harm to the painted surface from a damaged panel. Though used extensively, especially in the 19th century, it has since been largely supplanted by other, less severe conservation methods. In early 1929, the transfer to canvas having been successfully completed, Mr. Erickson purchased the painting."
+      },
+      {
+        "year": 1961,
+        "yearText": "New York, 1961",
+        "tagline": "How did this painting come to Pittsburgh?",
+        "story": "This portrait remained in the Erickson collection for more than 30 years. After Mr. Erickson’s death in 1936, it was inherited by his wife, Anna E. Erickson, who died in February 1961. In November of that year, the Erickson collection of two dozen paintings was sold at Parke-Bernet in New York, achieving the highest total for an art auction up to that time. The historic sale was attended by nearly 2,000 people, including several Pittsburghers, among them officials from Carnegie Institute and Sarah Mellon Scaife. Though unsuccessful in her effort to acquire the evening’s most sought-after painting, Rembrandt’s Aristotle with a Bust of Homer, which fetched a record for any painting sold up to that time, Mrs. Scaife was undeterred. She provided funds to purchase this portrait and another master work by Perugino as her and her family’s first of many magnificent gifts to the museum."
+      }
+    ],
+    "artist": "Frans Hals",
+    "nationality": "Dutch",
+    "life_dates": "1581-1585–08/29/1666",
+    "title": "Pieter Cornelisz. van der Morsch",
+    "creation_date": "1616",
+    "medium": "oil on canvas, transferred from panel",
+    "credit_line": "Acquired through the generosity of Mrs. Alan M. Scaife.",
+    "accession_number": "61.42.2"
+  },
+  {
     "startYear": 1520,
     "momentYear": 1889,
     "artist": "Adrien Ysenbrandt",
